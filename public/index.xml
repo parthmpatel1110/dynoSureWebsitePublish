@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepage on DynoSure</title>
-    <link>https://www.dynosure.co.in/</link>
+    <link>/</link>
     <description>Recent content in Homepage on DynoSure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Nov 2018 10:47:58 +1000</lastBuildDate>
-    <atom:link href="https://www.dynosure.co.in/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mr. Siddhant Kulkarni</title>
-      <link>https://www.dynosure.co.in/team/siddhant/</link>
+      <title>Siddhant Kulkarni</title>
+      <link>/team/sage-kirk/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>https://www.dynosure.co.in/team/siddhant/</guid>
+      <guid>/team/sage-kirk/</guid>
       <description></description>
     </item>
     <item>
       <title>DynoSense - Redefining Two-Wheeler Motor Testing</title>
-      <link>https://www.dynosure.co.in/services/accounting/</link>
+      <link>/services/accounting/</link>
       <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-      <guid>https://www.dynosure.co.in/services/accounting/</guid>
+      <guid>/services/accounting/</guid>
       <description>&lt;p&gt;Unlock a new era in motor testing with DynoSense. Discover the exceptional features that set DynoSense apart as the ultimate choice for &lt;strong&gt;efficiency, safety, and cost-effectiveness&lt;/strong&gt; in motor testing.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
-      <title>Mr. Parth Patel</title>
-      <link>https://www.dynosure.co.in/team/parth/</link>
+      <title>Parth Patel</title>
+      <link>/team/peter-van-eijk/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>https://www.dynosure.co.in/team/parth/</guid>
+      <guid>/team/peter-van-eijk/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
-      <link>https://www.dynosure.co.in/about/</link>
+      <link>/about/</link>
       <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
-      <guid>https://www.dynosure.co.in/about/</guid>
+      <guid>/about/</guid>
       <description>DynoSure leads the charge in EV testing solutions with our flagship product, DynoSense. Pioneering the industry, DynoSense incorporates cutting-edge features like Raspberry Pi and computer vision technology to ensure unparalleled precision and safety in two-wheeler motor assessments, setting a new standard for efficiency in electric vehicle testing.&#xA;At DynoSure, our commitment to excellence shines through in every aspect of DynoSense. As a reliable partner, we offer a comprehensive solution for those seeking innovation and performance in motor testing.</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://www.dynosure.co.in/contact/</link>
+      <link>/contact/</link>
       <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
-      <guid>https://www.dynosure.co.in/contact/</guid>
+      <guid>/contact/</guid>
       <description></description>
     </item>
   </channel>

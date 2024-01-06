@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Team on DynoSure</title>
-    <link>https://www.dynosure.co.in/team/</link>
+    <link>/team/</link>
     <description>Recent content in Team on DynoSure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Nov 2018 10:47:58 +1000</lastBuildDate>
-    <atom:link href="https://www.dynosure.co.in/team/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/team/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mr. Siddhant Kulkarni</title>
-      <link>https://www.dynosure.co.in/team/siddhant/</link>
+      <title>Siddhant Kulkarni</title>
+      <link>/team/sage-kirk/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>https://www.dynosure.co.in/team/siddhant/</guid>
+      <guid>/team/sage-kirk/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mr. Parth Patel</title>
-      <link>https://www.dynosure.co.in/team/parth/</link>
+      <title>Parth Patel</title>
+      <link>/team/peter-van-eijk/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
-      <guid>https://www.dynosure.co.in/team/parth/</guid>
+      <guid>/team/peter-van-eijk/</guid>
       <description></description>
     </item>
   </channel>
