@@ -1,11 +1,11 @@
 ---
 title: 'Product'
-description: 'We offers the state of art testing equiments for EV vehicles'
+description: 'SLCAN'
 intro_image: "images/vehicle/2.JPG"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Products that help to test and verify efficiently
+# Products that help to communicate with vehicle efficiently
 
-We offer the state of art testing equiments for EV vehicles instruments.
+We offer open source SLCAN (USB to CAN tool) with indutrial grade software support and affordable. 

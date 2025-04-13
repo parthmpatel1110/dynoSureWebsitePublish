@@ -1,14 +1,14 @@
 [
   {
-    "title": "More Secure Operation",
-    "description": "Enhanced protection with computer vision powered by Raspberry Pi."
+    "title": "Accessible Device",
+    "description": "Seamlessly integrates via USB as a virtual COM port—no drivers needed, ideal for effortless deployment across platforms."  },
+  {
+    "title": "Cost-Effectiveness",
+    "description": "Built on open-source firmware and using a reliable STM32G4 microcontroller, the DynoSure SLCAN adapter delivers professional-grade CAN access at a fraction of the cost."
   },
   {
-    "title": "Cost-effectiveness",
-    "description": "With the latest technology and Permanent magnet motor as the driver, costs are reduced significantly."
-  },
-  {
-    "title": "Support",
-    "description": "If something goes wrong, you can count on us."
+    "title": "Software Support",
+    "description": "Out-of-the-box compatibility with Python, C++, BusMaster on both Windows and Linux platforms."
   }
+ 
 ]

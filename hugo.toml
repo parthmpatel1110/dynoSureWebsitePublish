@@ -47,7 +47,7 @@ title = "DynoSure"
   [params.services]
     summary_truncate = 120 # How many characters to include in the summary of the services before truncating
 
-  [params.team]
+  [params.Downloads]
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   
@@ -60,19 +60,15 @@ title = "DynoSure"
     weight = 1
 
   [[menu.main]]
-    name = "Team"
-    url = "/team/"
+    name = "Downloads"
+    url = "/Downloads/"
     weight = 2
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 3
 
   # Footer Menu
   [[menu.footer]]
