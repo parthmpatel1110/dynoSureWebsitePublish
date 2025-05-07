@@ -56,7 +56,7 @@ title = "DynoSure"
   # Main Menu
   [[menu.main]]
     name = "Products"
-    url = "/services/"
+    url = "/services/product/"
     weight = 1
 
   [[menu.main]]

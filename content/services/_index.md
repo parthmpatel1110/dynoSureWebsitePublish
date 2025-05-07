@@ -2,7 +2,7 @@
 title: 'Product'
 description: 'SLCAN'
 intro_image: "images/vehicle/2.JPG"
-intro_image_absolute: true
+intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
 
