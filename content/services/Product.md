@@ -59,6 +59,8 @@ Windows, Linux
 
 ## [Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)
 
+## [Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.rar)
+
 # Variants and Price
 ## Without Plastic Encloser – 4657.0 ₹ (including GST and Shippint)
 ## With Plastic Encloser – 5532.0 ₹ (including GST and Shippint)
