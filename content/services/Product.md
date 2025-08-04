@@ -55,11 +55,13 @@ Designed for extended temperature ranges, making it suitable for industrial and 
 
 Windows, Linux
 
-## [Download DynoSure SLCANv1 USB to CAN Adapter Datasheet](./../../files/DynoSure_USB_CAN_Adapter.pdf)
+## [⬇️ Download DynoSure SLCANv1 USB to CAN Adapter Datasheet](./../../files/DynoSure_USB_CAN_Adapter.pdf)
 
-## [Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)
+## [⬇️ Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)
 
-## [Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.rar)
+## [⬇️ Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.rar)
+
+## [⬇️ Download python library for DynoSure SLCANv1 ](./../../files/slcanv1-python.zip)
 
 # Variants and Price
 ## Without Plastic Encloser – 4657.0 ₹ (including GST and Shippint)
