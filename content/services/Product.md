@@ -18,7 +18,7 @@ The DynoSure SLCANv1 adapter provides a reliable and convenient connection betwe
 <!--more-->
 
 <!-- ![Accounting Services](/images/dynoSense/dynamometer_system_digitala_1200x605.jpg) -->
-![targets](/images/slcan_withoutEncloser.jpg)
+![targets](/images/Slcanv1_withencloser_v3.jpg)
 # Specifications
 
 ## Microcontroller:
