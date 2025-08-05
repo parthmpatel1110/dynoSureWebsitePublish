@@ -71,7 +71,7 @@ Windows, Linux
  ## Bgauss Pvt Ltd.
  ## RTCON Engineering 
 
-### **To order the SLCANv1 contact us mobile no. 952256559 email id dynosure.india@gmail.com. **
+### **To order the SLCANv1 contact us mobile no. 9422556559 email id dynosure.india@gmail.com. **
 
 
 
