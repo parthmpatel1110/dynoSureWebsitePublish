@@ -67,8 +67,11 @@ Windows, Linux
 ## Without Plastic Encloser – 4657.0 ₹ (including GST and Shippint)
 ## With Plastic Encloser – 5532.0 ₹ (including GST and Shippint)
 
+# Our customers 
+ ## Bgauss Pvt Ltd.
+ ## RTCON Engineering 
 
-### **To order the SLCANv1 contact us on dynosure.india@gmail.com.**
+### **To order the SLCANv1 contact us mobile no. 952256559 email id dynosure.india@gmail.com. **
 
 
 
