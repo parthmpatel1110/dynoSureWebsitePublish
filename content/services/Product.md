@@ -64,12 +64,13 @@ Windows, Linux
 ## [⬇️ Download python library for DynoSure SLCANv1 ](./../../files/slcanv1-python.zip)
 
 # Variants and Price
-## Without Plastic Encloser – 4657.0 ₹ (including GST and Shipping)
-## With Plastic Encloser – 5532.0 ₹ (including GST and Shipping)
+## Without Plastic Encloser – 6889.0 ₹ (including GST and Shipping)
+## With Plastic Encloser – 7839.0 ₹ (including GST and Shipping)
 
 # Our customers 
  ## Bgauss Pvt Ltd.
- ## RTCON Engineering 
+ ## RTCON Engineering.
+ ## Jindal Mobilitruc Pvt Ltd.
 
 ### **To order the SLCANv1 contact us mobile no. 9422556559 email id dynosure.india@gmail.com. **
 
