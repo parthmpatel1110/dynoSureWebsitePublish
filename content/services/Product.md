@@ -70,7 +70,7 @@ Windows, Linux
 # Our customers 
  ## Bgauss Pvt Ltd.
  ## RTCON Engineering.
- ## Jindal Mobilitruc Pvt Ltd.
+ ## Jindal Mobilitric Pvt Ltd.
 
 ### **To order the SLCANv1 contact us mobile no. 9422556559 email id dynosure.india@gmail.com. **
 
