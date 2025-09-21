@@ -61,6 +61,8 @@ Windows, Linux
 
 ## [⬇️ Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.zip)
 
+## [⬇️ How to add DLL in your project ? ](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170)
+
 ## [⬇️ Download python library for DynoSure SLCANv1 ](./../../files/slcanv1-python.zip)
 
 # Variants and Price
