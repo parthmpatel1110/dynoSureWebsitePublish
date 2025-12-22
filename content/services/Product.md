@@ -57,7 +57,7 @@ Windows, Linux
 
 ## [⬇️ Download DynoSure SLCANv1 USB to CAN Adapter Datasheet](./../../files/DynoSure_USB_CAN_Adapter.pdf)
 
-## [⬇️ Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)
+## [⬇️ Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_3.2.2.zip)
 
 ## [⬇️ Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.zip)
 
