@@ -65,6 +65,8 @@ Windows, Linux
 
 ## [⬇️ Download python library for DynoSure SLCANv1 ](./../../files/slcanv1-python.zip)
 
+## [⬇️ Download documentation for python library](./../../files/slcanv1_documentation.pdf)
+
 # Our customers 
  ## Bgauss Pvt Ltd.
  ## RTCON Engineering.
