@@ -71,6 +71,9 @@ Windows, Linux
  ## Bgauss Pvt Ltd.
  ## RTCON Engineering.
  ## Jindal Mobilitric Pvt Ltd.
+ ## MATEL Motion and Energy Solutions Pvt Ltd.
+ ## TRONTEK ELECTRONICS LIMITED
+ ## Lord's Automative Private Limited
 
 ### **To order the SLCANv1 contact us mobile no. 9422556559 email id dynosure.india@gmail.com. **
 
