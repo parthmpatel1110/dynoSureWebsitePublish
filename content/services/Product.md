@@ -7,7 +7,7 @@ weight: 1
 ---
 
 
-The DynoSure SLCANv1 adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus. It is based on the **open-source** CANable2 firmware and utilizes the **Lawicel SLCAN protocol** for serial-line CAN communication. It comes with support for [BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe).
+The DynoSure SLCANv1 adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus. It is based on the **open-source** CANable2 firmware and utilizes the **Lawicel SLCAN protocol** for serial-line CAN communication. It comes with support for [BUSMASTER](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe).
 
 <!-- It is designed with mobility in mind and features a compact and lightweight plastic enclosure suitable for on-the-go diagnostics and embedded development.  -->
 
@@ -57,7 +57,7 @@ Windows, Linux
 
 ## [⬇️ Download DynoSure SLCANv1 USB to CAN Adapter Datasheet](./../../files/DynoSure_USB_CAN_Adapter.pdf)
 
-## [⬇️ Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_3.2.2.zip)
+## [⬇️ Download BUSMASTER for DynoSure SLCANv1 ](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe)
 
 ## [⬇️ Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.zip)
 

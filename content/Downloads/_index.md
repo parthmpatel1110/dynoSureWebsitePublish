@@ -6,7 +6,7 @@ intro_image_absolute_offset: "auto auto -148px -102px"
 intro_image_hide_on_mobile: false
 ---
 
-## [⬇️ Download Modified Busmaster for SLCANv1](/files/BUSMASTER_Installer_Ver_3.2.2.exe)
+## [⬇️ Download Modified Busmaster for SLCANv1](/files/BUSMASTER_Installer_Ver_4.1.1.exe)
 ## [⬇️ Download C library for DynoSure SLCANv1 ](./../../files/SLCAN_DLL_win.zip)
 ## [⬇️ Download C# library for DynoSure SLCANv1 ](./../../files/C#_examples_withDLLFiles.zip)
 
