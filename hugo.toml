@@ -1,13 +1,13 @@
 baseURL = "https://www.dynosure.co.in"
 themesDir = "themes"
 theme = "serif"
-languageCode = "en-us"
+locale = "en-us"
 title = "DynoSure"
 
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.55.0"
+    min = "0.158.0"
 
 [params]
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
@@ -56,7 +56,7 @@ title = "DynoSure"
   # Main Menu
   [[menu.main]]
     name = "Products"
-    url = "/services/product/"
+    url = "/services/"
     weight = 1
 
   [[menu.main]]

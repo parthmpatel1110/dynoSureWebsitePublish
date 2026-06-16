@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Product on DynoSure</title>
-    <link>/services/</link>
-    <description>Recent content in Product on DynoSure</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 18 Nov 2018 12:33:46 +1000</lastBuildDate>
-    <atom:link href="/services/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DynoSense - Redefining Two-Wheeler Motor Testing</title>
-      <link>/services/accounting/</link>
-      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-      <guid>/services/accounting/</guid>
-      <description>&lt;p&gt;Unlock a new era in motor testing with DynoSense. Discover the exceptional features that set DynoSense apart as the ultimate choice for &lt;strong&gt;efficiency, safety, and cost-effectiveness&lt;/strong&gt; in motor testing.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Products on DynoSure</title>
+		<link>http://localhost:1313/services/</link>
+		<description>Recent content in Products on DynoSure</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 18 Nov 2018 12:33:46 +1000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>SLCAN (USB to CAN Communication Adapter)</title>
+				<link>http://localhost:1313/services/product/</link>
+				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+				<guid>http://localhost:1313/services/product/</guid>
+				<description>&lt;p&gt;The DynoSure SLCANv1 adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus. It is based on the &lt;strong&gt;open-source&lt;/strong&gt; CANable2 firmware and utilizes the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt; for serial-line CAN communication. It comes with support for &lt;a href=&#34;./../../files/BUSMASTER_Installer_Ver_4.1.1.exe&#34;&gt;BUSMASTER&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>SLCAN GPIO (USB to CAN Adapter with GPIO)</title>
+				<link>http://localhost:1313/services/slcangpio/</link>
+				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+				<guid>http://localhost:1313/services/slcangpio/</guid>
+				<description>&lt;p&gt;The DynoSure SLCAN GPIO adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus with additional GPIO (General Purpose Input/Output) capabilities. It is based on the &lt;strong&gt;open-source&lt;/strong&gt; CANable2 firmware and utilizes the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt; for serial-line CAN communication. It comes with support for &lt;a href=&#34;./../../files/BUSMASTER_Installer_Ver_4.1.1.exe&#34;&gt;BUSMASTER&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>DynoSure LoggerV1 (CAN 2.0B Data Logger)</title>
+				<link>http://localhost:1313/services/loggerv1/</link>
+				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+				<guid>http://localhost:1313/services/loggerv1/</guid>
+				<description>&lt;p&gt;The first prototype of our CAN 2.0B Logger (DynoSure LoggerV1) has been successfully tested and verified! Following the successful launch of our first product, the SLCANv1 (a USB-to-CAN tool supporting the widely used BUSMASTER software), we are proud to introduce another essential tool designed specifically for automotive engineering.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -12,7 +12,7 @@
 
   <!-- CSS-->
   {{ $css_options := dict "targetPath" "css/style.css" "enableSourceMap" (not hugo.IsProduction) }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS $css_options }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | css.Sass $css_options }}
   {{ if hugo.IsProduction }}
     {{ $style = $style | minify | fingerprint }}
   {{ end }}

@@ -1,7 +1,7 @@
 ---
-title: 'Product'
+title: 'Products'
 description: 'SLCAN'
-intro_image: "images/vehicle/2.JPG"
+intro_image: "images/dynosure_all_products.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
