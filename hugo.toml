@@ -16,15 +16,15 @@ title = "DynoSure"
   favicon = "images/logo/dynoSure_32x32.svg"
 
   [params.homepage]
-    show_contact_box = false      # show / hide the contaxt box on the homepage
-    show_services_button = false # show / hide the "view all services" button
+    show_contact_box = true
+    show_services_button = true
 
   [params.logo]
     mobile = "images/logo/dynoSure.svg"
     mobile_height = "70px"
     desktop = "images/logo/dynoSure.svg"
     desktop_height = "150px"
-    alt = "Serif - A Hugo Business Theme"
+    alt = "DynoSure — CAN Bus Tools"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
@@ -40,8 +40,8 @@ title = "DynoSure"
     grey = "#5C5A5A"
 
   [params.seo]
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
+    meta_twitter_site = "@dynosure"
+    meta_twitter_creator = "@dynosure"
     meta_og_image = "/images/logo/dynoSure.svg"
 
   [params.services]
@@ -50,7 +50,10 @@ title = "DynoSure"
   [params.Downloads]
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
-  
+  [params.footer]
+    copyright_text = "© 2026 Maruti Electronics and Electrical. All rights reserved."
+
+
 
 [menu]
   # Main Menu
@@ -80,3 +83,8 @@ title = "DynoSure"
     name = "Contact"
     url = "/contact/"
     weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

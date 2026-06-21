@@ -1,0 +1,212 @@
+{{ define "body_classes" }}page-downloads{{ end }}
+
+{{ define "main" }}
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-6">
+      <h1 class="title">{{ .Title }}</h1>
+      <p class="subtitle text-muted mt-2">Get the latest datasheets, software installers, drivers, libraries, and utilities for your DynoSure devices.</p>
+    </div>
+  </div>
+
+  <!-- Downloads Grid/Categories -->
+  <div class="row">
+    <!-- Category 1: Software, Datasheets & Catalog -->
+    <div class="col-12 mb-6">
+      <h2 class="category-title"><span class="icon">🖥️</span> Software, Datasheets & Catalog</h2>
+      <div class="row">
+        <!-- BUSMASTER -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-exe">EXE</span>
+              <h3 class="card-title">Modified BUSMASTER Installer</h3>
+              <p class="card-text">Pre-configured version of the industry-standard BUSMASTER software, optimized for seamless out-of-the-box integration with DynoSure SLCANv1 adapters.</p>
+              <a href="{{ "/files/BUSMASTER_Installer_Ver_4.1.1.exe" | relURL }}" class="btn-download" download>
+                <span>Download Installer (Ver 4.1.1)</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Catalog -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-pdf">PDF</span>
+              <h3 class="card-title">DynoSure Product Catalog</h3>
+              <p class="card-text">Comprehensive catalog featuring our entire product lineup (SLCANv1, SLCAN GPIO, LoggerV1) with visual highlights, features, and specs.</p>
+              <a href="{{ "/files/DynoSure_Product_Catalog.pdf" | relURL }}" class="btn-download" target="_blank">
+                <span>Download Catalog</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- SLCANv1 Datasheet -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-pdf">PDF</span>
+              <h3 class="card-title">DynoSure SLCANv1 Datasheet</h3>
+              <p class="card-text">Detailed specifications, pinout diagrams, and technical details for the standard DynoSure USB-to-CAN adapter.</p>
+              <a href="{{ "/files/DynoSure_USB_CAN_Adapter.pdf" | relURL }}" class="btn-download" target="_blank">
+                <span>Download Datasheet</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- SLCAN GPIO Datasheet -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-pdf">PDF</span>
+              <h3 class="card-title">SLCAN GPIO Datasheet</h3>
+              <p class="card-text">Technical datasheet including the GPIO control command protocol, DB9 pinout, and auxiliary connector assignments.</p>
+              <a href="{{ "/files/DynoSure_SLCAN_GPIO_Datasheet.pdf" | relURL }}" class="btn-download" target="_blank">
+                <span>Download Datasheet</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- LoggerV1 Datasheet -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-pdf">PDF</span>
+              <h3 class="card-title">LoggerV1 Datasheet</h3>
+              <p class="card-text">Technical specifications, operating modes (logging/USB), microSD configuration, firmware update, and DB9 power pinout.</p>
+              <a href="{{ "/files/DynoSure_Logger_Datasheet.pdf" | relURL }}" class="btn-download" target="_blank">
+                <span>Download Datasheet</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2: Software Development Kits (SDKs) -->
+    <div class="col-12 mb-6">
+      <h2 class="category-title"><span class="icon">📦</span> Software Development Kits (SDKs)</h2>
+      <div class="row">
+        <!-- Python Library -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-zip">ZIP</span>
+              <h3 class="card-title">Python Library</h3>
+              <p class="card-text">Official Python wrapper and library for communicating with DynoSure adapters using python-can and standard COM ports.</p>
+              <a href="{{ "/files/slcanv1-python.zip" | relURL }}" class="btn-download" download>
+                <span>Download SDK</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- C/C++ DLL -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-zip">ZIP</span>
+              <h3 class="card-title">C/C++ Library (DLL)</h3>
+              <p class="card-text">Windows DLL files and C/C++ headers for low-level integration of DynoSure adapters into custom test rigs and applications.</p>
+              <a href="{{ "/files/SLCAN_DLL_win.zip" | relURL }}" class="btn-download" download>
+                <span>Download DLL Files</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- C# SDK -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-zip">ZIP</span>
+              <h3 class="card-title">C# Library & Examples</h3>
+              <p class="card-text">C# wrappers, DLL files, and starter project examples for developers building custom .NET applications with DynoSure adapters.</p>
+              <a href="{{ "/files/C#_examples_withDLLFiles.zip" | relURL }}" class="btn-download" download>
+                <span>Download C# SDK</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: Utility Scripts & Converters -->
+    <div class="col-12 mb-6">
+      <h2 class="category-title"><span class="icon">⚙️</span> Utility Scripts & Converters</h2>
+      <div class="row">
+        <!-- log2Asc -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-py">PY</span>
+              <h3 class="card-title">Log to Vector ASC Converter</h3>
+              <p class="card-text">Python script to convert raw log files captured by the DynoSure LoggerV1 into the industry-standard Vector ASC format for analysis.</p>
+              <a href="{{ "/files/log2Asc.py" | relURL }}" class="btn-download" download>
+                <span>Download Python Script</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ASC to Excel -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-zip">ZIP</span>
+              <h3 class="card-title">Vector ASC to Excel Converter</h3>
+              <p class="card-text">Python utility to parse Vector ASC log files and export them directly to Microsoft Excel format for easy charting and offline reports.</p>
+              <a href="{{ "/files/python_code_for_asc_excel.zip" | relURL }}" class="btn-download" download>
+                <span>Download Script ZIP</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 4: Documentation & Guides -->
+    <div class="col-12 mb-6">
+      <h2 class="category-title"><span class="icon">📚</span> Documentation & Guides</h2>
+      <div class="row">
+        <!-- Python Docs -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-pdf">PDF</span>
+              <h3 class="card-title">Python SDK Documentation</h3>
+              <p class="card-text">Detailed API documentation, setup instructions, and code samples for working with the DynoSure Python library.</p>
+              <a href="{{ "/files/slcanv1_documentation.pdf" | relURL }}" class="btn-download" target="_blank">
+                <span>Download SDK Guide</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- python-can examples -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="download-card">
+            <div class="download-card-body">
+              <span class="file-badge badge-zip">ZIP</span>
+              <h3 class="card-title">python-can Example Configurations</h3>
+              <p class="card-text">Pre-configured scripts and configuration files demonstrating how to use the standard python-can package with DynoSure interfaces.</p>
+              <a href="{{ "/files/python-can.zip" | relURL }}" class="btn-download" download>
+                <span>Download Examples</span>
+                <span class="arrow">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{ end }}

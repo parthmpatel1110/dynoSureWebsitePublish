@@ -4,7 +4,7 @@
     "description": "Seamlessly integrates via USB as a virtual COM port—no drivers needed, ideal for effortless deployment across platforms."  },
   {
     "title": "Cost-Effectiveness",
-    "description": "Built on open-source firmware and using a reliable STM32G4 microcontroller, the DynoSure SLCAN adapter delivers professional-grade CAN access at a fraction of the cost."
+    "description": "Based on open-source firmware and using a reliable STM32G4 microcontroller, the DynoSure SLCAN adapter delivers professional-grade CAN access at a fraction of the cost."
   },
   {
     "title": "Software Support",

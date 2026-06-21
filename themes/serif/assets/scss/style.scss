@@ -48,6 +48,8 @@ $font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
 @import 'pages/team/team-summary';
 @import 'pages/services/page-services-single';
 @import 'pages/services/page-services-list';
+@import 'pages/page-contact';
+@import 'pages/page-downloads';
 
 body {
   font-size: 16px;

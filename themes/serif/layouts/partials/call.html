@@ -1,17 +1,20 @@
 <div class="call">
   <div class="call-box-top">
     {{ if hugo.Data.contact.phone }}
-        <div class="call-phone"><strong>Phone: </strong> {{ hugo.Data.contact.phone }} </div>
+    <div class="call-phone"><strong>📱 Phone: </strong> {{ hugo.Data.contact.phone }} </div>
+    {{ end }}
+    {{ if hugo.Data.contact.phone2 }}
+    <div class="call-phone"><strong>📱 Phone: </strong> {{ hugo.Data.contact.phone2 }} </div>
     {{ end }}
     {{ if hugo.Data.contact.email }}
-    <div class="call-email"><strong>Email: </strong>
+    <div class="call-email"><strong>✉️ Email: </strong>
       <a href="mailto:{{ hugo.Data.contact.email }}">
         {{ hugo.Data.contact.email }}
       </a>
     </div>
     {{ end }}
     {{ if hugo.Data.contact.address }}
-    <div class="call-email"><strong>address: </strong>
+    <div class="call-address"><strong>📍 Address: </strong>
       <a href="{{ hugo.Data.contact.location }}">
         {{ hugo.Data.contact.address }}
       </a>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Products on DynoSure</title>
-		<link>http://localhost:1313/services/</link>
+		<link>https://www.dynosure.co.in/services/</link>
 		<description>Recent content in Products on DynoSure</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,27 +12,27 @@
 		
 			<lastBuildDate>Sun, 18 Nov 2018 12:33:46 +1000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://www.dynosure.co.in/services/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>SLCAN (USB to CAN Communication Adapter)</title>
-				<link>http://localhost:1313/services/product/</link>
+				<title>DynoSure SLCANv1 — USB to CAN Adapter</title>
+				<link>https://www.dynosure.co.in/services/product/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>http://localhost:1313/services/product/</guid>
-				<description>&lt;p&gt;The DynoSure SLCANv1 adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus. It is based on the &lt;strong&gt;open-source&lt;/strong&gt; CANable2 firmware and utilizes the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt; for serial-line CAN communication. It comes with support for &lt;a href=&#34;./../../files/BUSMASTER_Installer_Ver_4.1.1.exe&#34;&gt;BUSMASTER&lt;/a&gt;.&lt;/p&gt;</description>
+				<guid>https://www.dynosure.co.in/services/product/</guid>
+				<description>&lt;p&gt;The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for automotive engineers, embedded developers, and testing professionals. Based on the CANable2 firmware and the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt;, it exposes the CAN interface as a standard virtual COM port — making integration seamless with zero driver overhead.&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>SLCAN GPIO (USB to CAN Adapter with GPIO)</title>
-				<link>http://localhost:1313/services/slcangpio/</link>
+				<title>DynoSure SLCAN GPIO — USB to CAN Adapter with GPIO Control</title>
+				<link>https://www.dynosure.co.in/services/slcangpio/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>http://localhost:1313/services/slcangpio/</guid>
-				<description>&lt;p&gt;The DynoSure SLCAN GPIO adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus with additional GPIO (General Purpose Input/Output) capabilities. It is based on the &lt;strong&gt;open-source&lt;/strong&gt; CANable2 firmware and utilizes the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt; for serial-line CAN communication. It comes with support for &lt;a href=&#34;./../../files/BUSMASTER_Installer_Ver_4.1.1.exe&#34;&gt;BUSMASTER&lt;/a&gt;.&lt;/p&gt;</description>
+				<guid>https://www.dynosure.co.in/services/slcangpio/</guid>
+				<description>&lt;p&gt;The DynoSure SLCAN GPIO combines a full-featured USB-to-CAN adapter with &lt;strong&gt;8 configurable GPIO outputs&lt;/strong&gt;, giving you CAN bus communication and hardware control in a single compact device. Built on the CANable2 firmware with the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt;, it appears as a virtual COM port and integrates seamlessly with BUSMASTER and other CAN tools.&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>DynoSure LoggerV1 (CAN 2.0B Data Logger)</title>
-				<link>http://localhost:1313/services/loggerv1/</link>
+				<title>DynoSure LoggerV1 — Standalone CAN 2.0B Data Logger</title>
+				<link>https://www.dynosure.co.in/services/loggerv1/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>http://localhost:1313/services/loggerv1/</guid>
-				<description>&lt;p&gt;The first prototype of our CAN 2.0B Logger (DynoSure LoggerV1) has been successfully tested and verified! Following the successful launch of our first product, the SLCANv1 (a USB-to-CAN tool supporting the widely used BUSMASTER software), we are proud to introduce another essential tool designed specifically for automotive engineering.&lt;/p&gt;</description>
+				<guid>https://www.dynosure.co.in/services/loggerv1/</guid>
+				<description>&lt;p&gt;The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard &lt;strong&gt;Vector ASC file format&lt;/strong&gt; — no proprietary software, no vendor lock-in.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

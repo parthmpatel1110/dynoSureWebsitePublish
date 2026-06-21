@@ -1,12 +1,29 @@
 <div class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          <h3 class="footer-title">{{.Site.Title}}</h3>
-          {{ partial "footer-menu" . }}
-          
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">{{.Site.Title}}</h3>
+        <div class="footer-contact">
+          <p>Affordable automotive diagnostic tools — engineered in India.</p>
         </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-contact">
+          {{ if hugo.Data.contact.email }}
+          <p>✉️ <a href="mailto:{{ hugo.Data.contact.email }}">{{ hugo.Data.contact.email }}</a></p>
+          {{ end }}
+          {{ if hugo.Data.contact.phone }}
+          <p>📱 {{ hugo.Data.contact.phone }}</p>
+          {{ end }}
+          {{ if hugo.Data.contact.phone2 }}
+          <p>📱 {{ hugo.Data.contact.phone2 }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Links</h3>
+        {{ partial "footer-menu" . }}
       </div>
     </div>
   </div>

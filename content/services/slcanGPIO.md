@@ -1,77 +1,91 @@
 ---
-title: "SLCAN GPIO (USB to CAN Adapter with GPIO)"
+title: "DynoSure SLCAN GPIO — USB to CAN Adapter with GPIO Control"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
 weight: 2
-image: "images/SLCAN_GPIO.jpeg"
+image: "images/SLCAN_GPIO_no_bg.png"
 ---
 
-
-The DynoSure SLCAN GPIO adapter provides a reliable and convenient connection between a PC and a CAN(Controller Area Network) bus with additional GPIO (General Purpose Input/Output) capabilities. It is based on the **open-source** CANable2 firmware and utilizes the **Lawicel SLCAN protocol** for serial-line CAN communication. It comes with support for [BUSMASTER](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe).
-
+The DynoSure SLCAN GPIO combines a full-featured USB-to-CAN adapter with **8 configurable GPIO outputs**, giving you CAN bus communication and hardware control in a single compact device. Built on the CANable2 firmware with the **Lawicel SLCAN protocol**, it appears as a virtual COM port and integrates seamlessly with BUSMASTER and other CAN tools.
 
 <!--more-->
 
-![targets](/images/SLCAN_GPIO.jpeg)
+![DynoSure SLCAN GPIO](/images/SLCAN_GPIO_no_bg.png)
+
+---
+
 # Specifications
 
-## Microcontroller:
-Powered by an STM32G4 series MCU running at 170 MHz, ensuring fast communication and low latency.
+| Parameter | Details |
+|---|---|
+| **Microcontroller** | STM32G4 series @ 170 MHz |
+| **CAN Protocols** | CAN 2.0A (11-bit), CAN 2.0B (29-bit), CAN-FD |
+| **USB Interface** | USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0) |
+| **Standard CAN Bitrates** | 10, 20, 50, 83.3, 100, 125, 250, 500, 750 kbps, 1 Mbps |
+| **CAN-FD Data Bitrates** | Up to 8 Mbps |
+| **GPIO Channels** | 8 digital outputs |
+| **Power Supply** | USB powered — no external supply required |
+| **Operating Temperature** | Extended range — suitable for industrial & automotive environments |
 
-## Supported CAN Protocols:
-CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID), CAN-FD (Flexible Data Rate) for high-speed applications
+---
 
-## USB Interface:
+# GPIO Control Protocol
 
-USB 2.0 Full-Speed, Backward compatible with USB 1.1 and forward-compatible with USB 3.0
+The 8 GPIO outputs are controlled by sending a special CAN message through the adapter. This message is processed internally and is **not transmitted on the physical CAN bus**.
 
-## Bitrate Support:
+| Parameter | Value |
+|---|---|
+| **CAN ID** | `0x1FFF` (Extended 29-bit) |
+| **DLC** | 2 |
+| **Byte 0** | GPIO control — each bit maps to one GPIO pin (bit 0 → GPIO 0, bit 7 → GPIO 7). Set `1` = HIGH, `0` = LOW |
+| **Byte 1** | `0xAA` (fixed identifier for GPIO command) |
 
-Standard CAN bit rates: 10 kbps, 20 kbps, 50 kbps, 83.3 kbps, 100 kbps, 125 kbps, 250 kbps, 500 kbps, 750 kbps, 1 Mbps
+### Example
 
-## GPIO Features:
+To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 
-Configurable GPIO pins for digital input/output, Hardware interrupt support on GPIO pins, Suitable for triggering external events and reading sensor states
+| Byte | Value | Binary |
+|---|---|---|
+| Byte 0 | `0x15` | `0001 0101` |
+| Byte 1 | `0xAA` | `1010 1010` |
 
-## Power Supply:
+> **Note:** The GPIO control message (ID `0x1FFF`) is intercepted by the adapter firmware and will NOT appear on the physical CAN bus. All other CAN messages transmit normally.
 
-Fully powered via USB — no external power required
-
-## Thermal Environment:
-
-Designed for extended temperature ranges, making it suitable for industrial and automotive environments
+---
 
 # Software & Platform Support
 
-## Appears as a virtual COM port — no custom drivers required
+- Enumerates as a **Virtual COM Port** — no custom drivers required
+- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe)** — industry-standard CAN analysis tool
+- Works with **Python** (python-can), **C/C++** libraries, and any SLCAN-compatible software
+- GPIO control works through the same COM port — no additional interface needed
+- Supported on **Windows** and **Linux**
 
-## Compatible with popular CAN analysis and development tools:
+---
 
-**BusMaster**, Python (python-can), C/C++ libraries
+# Downloads
 
-## Supports major platforms:
+| Resource | Link |
+|---|---|
+| 📄 Product Datasheet | [⬇️ Download](./../../files/DynoSure_SLCAN_GPIO_Datasheet.pdf) |
+| 🖥️ BUSMASTER Installer | [⬇️ Download](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe) |
+| ⚙️ C/C++ Library (DLL) | [⬇️ Download](./../../files/SLCAN_DLL_win.zip) |
+| 📖 How to Add DLL in Your Project | [⬇️ Guide](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) |
+| 🐍 Python Library | [⬇️ Download](./../../files/slcanv1-python.zip) |
+| 📖 Python Library Documentation | [⬇️ Download](./../../files/slcanv1_documentation.pdf) |
 
-Windows, Linux
+---
 
-## [⬇️ Download DynoSure SLCAN GPIO USB to CAN Adapter Datasheet](./../../files/DynoSure_USB_CAN_Adapter.pdf)
+# Trusted By
 
-## [⬇️ Download BUSMASTER for DynoSure SLCAN GPIO ](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe)
+- Bgauss Pvt Ltd.
+- RTCON Engineering
+- Jindal Mobilitric Pvt Ltd.
+- MATEL Motion and Energy Solutions Pvt Ltd.
+- TRONTEK ELECTRONICS LIMITED
+- Lord's Automative Private Limited
 
-## [⬇️ Download C library for DynoSure SLCAN GPIO ](./../../files/SLCAN_DLL_win.zip)
+---
 
-## [⬇️ How to add DLL in your project ? ](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170)
-
-## [⬇️ Download python library for DynoSure SLCAN GPIO ](./../../files/slcanv1-python.zip)
-
-## [⬇️ Download documentation for python library](./../../files/slcanv1_documentation.pdf)
-
-# Our customers 
- ## Bgauss Pvt Ltd.
- ## RTCON Engineering.
- ## Jindal Mobilitric Pvt Ltd.
- ## MATEL Motion and Energy Solutions Pvt Ltd.
- ## TRONTEK ELECTRONICS LIMITED
- ## Lord's Automative Private Limited
-
-### **To order the SLCAN GPIO contact us mobile no. 9422556559 email id dynosure.india@gmail.com. **
+### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559 (Parth Patel)**, or email **dynosure.india@gmail.com**

@@ -12805,61 +12805,43 @@ ol {
 
 .footer {
   background: #865e5eff;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-  .footer .footer-inner {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start; }
-    @media (min-width: 576px) {
-      .footer .footer-inner {
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center; } }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .footer .footer-title {
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: Playfair Display, serif, -apple-system;
     font-weight: bold;
-    margin-bottom: 10px; }
-    @media (min-width: 576px) {
-      .footer .footer-title {
-        margin: 0; } }
+    margin-bottom: 14px; }
+  .footer .footer-contact {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.7; }
+    .footer .footer-contact p {
+      margin-bottom: 6px;
+      color: rgba(255, 255, 255, 0.85); }
+    .footer .footer-contact a {
+      color: #fff;
+      text-decoration: underline; }
+      .footer .footer-contact a:hover {
+        color: rgba(255, 255, 255, 0.6); }
   .footer ul {
     list-style: none;
     margin: 0;
     padding: 0; }
     .footer ul li {
       color: #ffffff;
-      font-size: 1rem; }
+      font-size: 0.95rem; }
       .footer ul li a {
         color: #ffffff;
         text-decoration: none;
-        padding: 12px 14px 12px 0;
+        padding: 6px 0;
         display: block; }
         .footer ul li a:hover {
           text-decoration: underline; }
       .footer ul li.active a {
         font-weight: bold; }
-    @media (min-width: 576px) {
-      .footer ul {
-        height: inherit;
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        justify-content: flex-end; }
-        .footer ul li {
-          list-style: none;
-          margin-right: 10px; }
-          .footer ul li:last-of-type {
-            margin-right: 0; }
-          .footer ul li a {
-            display: inline-block;
-            height: 40px;
-            padding: 10px 8px 10px 8px; } }
+
 .sub-footer {
   background: #684949;
   color: #ffffff;
@@ -13023,32 +13005,41 @@ ol {
     right: unset; }
 
 .button {
-  white-space: nowrap;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 14px;
-  background: #865e5eff;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 6px;
   text-decoration: none;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease; }
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-align: center; }
   .button:hover {
-    color: #ffffff;
-    background-color: #a07777;
-    transform: translateY(-1px);
     text-decoration: none; }
+
+.button-primary {
+  background-color: #865e5eff;
+  color: #ffffff;
+  border: 2px solid #865e5eff; }
+  .button-primary:hover {
+    background-color: #684949;
+    border-color: #684949;
+    color: #ffffff; }
+
+.button-secondary {
+  background-color: transparent;
+  color: #865e5eff;
+  border: 2px solid #865e5eff; }
+  .button-secondary:hover {
+    background-color: #865e5eff;
+    color: #ffffff; }
 
 .call {
   position: relative;
   overflow: hidden;
   background-color: #f6f7ff;
-  border-radius: 4px;
+  border-radius: 8px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13073,23 +13064,15 @@ ol {
   .call .call-name {
     font-size: 1.1rem;
     font-weight: bold; }
-  .call .call-phone {
-    margin-bottom: 5px; }
-  .call .call-phone {
-    margin-bottom: 5px; }
+  .call .call-phone,
+  .call .call-email,
+  .call .call-address {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.5; }
   .call strong {
     font-weight: bold; }
-  .call svg {
-    fill: #dfd1d1;
-    position: absolute;
-    bottom: -9px;
-    right: 0;
-    width: 100px;
-    height: 100px; }
-    @media (min-width: 576px) {
-      .call svg {
-        width: 120px;
-        height: 120px; } }
+
 .title {
   color: #2f2f41;
   font-size: 48px;
@@ -13377,12 +13360,103 @@ ol {
       width: 90px;
       height: auto; }
 
+.page-services-single .service-single .title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a2e; }
+
 .page-services-single .content > p:first-of-type {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #505050; }
+
+.page-services-single .content img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+
+.page-services-single .content hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 30px 0; }
+
+.page-services-single .content h1 {
   font-size: 1.6rem;
-  line-height: 1.4;
-  margin-bottom: 40px;
-  font-weight: regular;
-  color: #686868; }
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #865e5eff;
+  display: inline-block; }
+
+.page-services-single .content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 16px;
+  margin-bottom: 8px; }
+
+.page-services-single .content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333; }
+
+.page-services-single .content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06); }
+  .page-services-single .content table thead th {
+    background-color: #865e5eff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    text-align: left;
+    border: none; }
+  .page-services-single .content table tbody td {
+    padding: 10px 16px;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    vertical-align: top; }
+    .page-services-single .content table tbody td:first-child {
+      font-weight: 600;
+      color: #333;
+      white-space: nowrap; }
+  .page-services-single .content table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; }
+  .page-services-single .content table tbody tr:hover {
+    background-color: #f0f4ff; }
+
+.page-services-single .content blockquote {
+  background: #f0f4ff;
+  border-left: 4px solid #865e5eff;
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 20px 0; }
+  .page-services-single .content blockquote p {
+    color: #444;
+    margin: 0; }
+  .page-services-single .content blockquote strong {
+    color: #865e5eff; }
+
+.page-services-single .content ul li {
+  margin-bottom: 8px;
+  line-height: 1.6; }
+
+.page-services-single .content a {
+  color: #865e5eff;
+  font-weight: 500; }
+  .page-services-single .content a:hover {
+    text-decoration: underline; }
 
 .page-services-list .service-summary {
   background: #ffffff;
@@ -13427,6 +13501,211 @@ ol {
       font-size: 0.95rem;
       line-height: 1.5;
       flex: 1; }
+
+.page-contact .title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.page-contact .contact-info-card,
+.page-contact .contact-form-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+  .page-contact .contact-info-card h2,
+  .page-contact .contact-form-card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #865e5eff;
+    display: inline-block; }
+
+.page-contact .call {
+  background: transparent; }
+  .page-contact .call .call-box-top {
+    padding: 0; }
+  .page-contact .call .call-phone,
+  .page-contact .call .call-email,
+  .page-contact .call .call-address {
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+    line-height: 1.5; }
+    .page-contact .call .call-phone a,
+    .page-contact .call .call-email a,
+    .page-contact .call .call-address a {
+      color: #865e5eff; }
+      .page-contact .call .call-phone a:hover,
+      .page-contact .call .call-email a:hover,
+      .page-contact .call .call-address a:hover {
+        text-decoration: underline; }
+
+.page-contact .inquiry-form .form-group {
+  margin-bottom: 18px; }
+  .page-contact .inquiry-form .form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 6px; }
+  .page-contact .inquiry-form .form-group input,
+  .page-contact .inquiry-form .form-group select,
+  .page-contact .inquiry-form .form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+    .page-contact .inquiry-form .form-group input:focus,
+    .page-contact .inquiry-form .form-group select:focus,
+    .page-contact .inquiry-form .form-group textarea:focus {
+      outline: none;
+      border-color: #865e5eff;
+      box-shadow: 0 0 0 3px rgba(134, 94, 94, 0.15); }
+  .page-contact .inquiry-form .form-group textarea {
+    resize: vertical;
+    min-height: 120px; }
+  .page-contact .inquiry-form .form-group select {
+    appearance: auto;
+    cursor: pointer; }
+
+.page-contact .inquiry-form .button-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #865e5eff;
+  color: #fff;
+  transition: background-color 0.2s ease, transform 0.1s ease; }
+  .page-contact .inquiry-form .button-primary:hover {
+    background-color: #6e4d4d;
+    transform: translateY(-1px); }
+  .page-contact .inquiry-form .button-primary:active {
+    transform: translateY(0); }
+
+.page-downloads .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2f2f41;
+  margin-bottom: 8px; }
+
+.page-downloads .subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #5C5A5A;
+  line-height: 1.5; }
+
+.page-downloads .category-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2f2f41;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #865e5eff;
+  display: flex;
+  align-items: center; }
+  .page-downloads .category-title .icon {
+    margin-right: 10px;
+    font-size: 1.5rem; }
+
+.page-downloads .download-card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column; }
+  .page-downloads .download-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); }
+
+.page-downloads .download-card-body {
+  padding: 24px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+
+.page-downloads .file-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
+  .page-downloads .file-badge.badge-exe {
+    background: #e3f2fd;
+    color: #1976d2; }
+  .page-downloads .file-badge.badge-pdf {
+    background: #ffebee;
+    color: #d32f2f; }
+  .page-downloads .file-badge.badge-zip {
+    background: #f5f5f5;
+    color: #616161; }
+  .page-downloads .file-badge.badge-py {
+    background: #e8f5e9;
+    color: #388e3c; }
+
+.page-downloads .card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2f2f41;
+  margin-bottom: 12px;
+  padding-right: 60px;
+  /* Leave space for the badge */ }
+
+.page-downloads .card-text {
+  font-size: 0.92rem;
+  color: #5C5A5A;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+  /* Pushes the button to the bottom */ }
+
+.page-downloads .btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #865e5eff;
+  color: #ffffff !important;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+  margin-top: auto; }
+  .page-downloads .btn-download:hover {
+    background-color: #6e4d4d;
+    transform: translateY(-1px); }
+  .page-downloads .btn-download:active {
+    transform: translateY(0); }
+  .page-downloads .btn-download .arrow {
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: transform 0.2s ease; }
+  .page-downloads .btn-download:hover .arrow {
+    transform: translateY(2px); }
 
 body {
   font-size: 16px;

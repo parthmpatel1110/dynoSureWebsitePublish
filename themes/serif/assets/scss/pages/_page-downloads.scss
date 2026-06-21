@@ -1,0 +1,141 @@
+.page-downloads {
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: $grey;
+    line-height: 1.5;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $black;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $primary;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .download-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .download-card-body {
+    padding: 24px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .file-badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    &.badge-exe {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+
+    &.badge-pdf {
+      background: #ffebee;
+      color: #d32f2f;
+    }
+
+    &.badge-zip {
+      background: #f5f5f5;
+      color: #616161;
+    }
+
+    &.badge-py {
+      background: #e8f5e9;
+      color: #388e3c;
+    }
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 12px;
+    padding-right: 60px; /* Leave space for the badge */
+  }
+
+  .card-text {
+    font-size: 0.92rem;
+    color: $grey;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1; /* Pushes the button to the bottom */
+  }
+
+  .btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary;
+    color: #ffffff !important;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+    margin-top: auto;
+
+    &:hover {
+      background-color: darken($primary, 8%);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    .arrow {
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover .arrow {
+      transform: translateY(2px);
+    }
+  }
+}

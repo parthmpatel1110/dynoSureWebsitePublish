@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Downloads on DynoSure</title>
-		<link>http://localhost:1313/downloads/</link>
+		<link>https://www.dynosure.co.in/downloads/</link>
 		<description>Recent content in Downloads on DynoSure</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,13 +10,6 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/downloads/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title></title>
-				<link>http://localhost:1313/downloads/sage-kirk/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/downloads/sage-kirk/</guid>
-				<description></description>
-			</item>
+			<atom:link href="https://www.dynosure.co.in/downloads/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

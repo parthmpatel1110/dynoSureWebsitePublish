@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Contact - DynoSure</title>
@@ -19,7 +19,9 @@
   
   
   
-  <link rel="stylesheet" href="/css/style.css">
+    
+  
+  <link rel="stylesheet" href="/css/style.min.92143d4055ab591cd4398a1f2d85500c8117e09e142fd43f2c1b5faf52bf4715.css">
 
   
 
@@ -27,12 +29,12 @@
     
     <meta property="og:title" content="Contact"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://localhost:1313/contact/"/>
-    <meta property="og:image" content="http://localhost:1313/images/logo/dynoSure.svg"/>
+    <meta property="og:url" content="https://www.dynosure.co.in/contact/"/>
+    <meta property="og:image" content="https://www.dynosure.co.in/images/logo/dynoSure.svg"/>
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@zerostaticio"/>
-    <meta name="twitter:creator" content="@zerostaticio"/>
+    <meta name="twitter:site" content="@dynosure"/>
+    <meta name="twitter:creator" content="@dynosure"/>
   
 
 </head>
@@ -72,10 +74,10 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="/"><img height=150px alt="Serif - A Hugo Business Theme" src="/images/logo/dynoSure.svg" /></a>
+      <a href="/"><img height=150px alt="DynoSure — CAN Bus Tools" src="/images/logo/dynoSure.svg" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="/"><img height=70px alt="Serif - A Hugo Business Theme" src="/images/logo/dynoSure.svg" /></a>
+      <a href="/"><img height=70px alt="DynoSure — CAN Bus Tools" src="/images/logo/dynoSure.svg" /></a>
     </div>
     <div id="main-menu" class="main-menu">
   <ul>
@@ -120,25 +122,33 @@
 </div>
 
     
-<div class="container pb-6 pt-6 pt-md-14 pb-md-14">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-        <h1 class="title">Contact</h1>
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <h1 class="title">Contact</h1>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4">
+    <div class="col-12 col-md-5">
+      <div class="contact-info-card">
+        <h2>Get In Touch</h2>
         <div class="call">
   <div class="call-box-top">
     
-        <div class="call-phone"><strong>Phone: </strong> 9422556559 (Parth Patel) </div>
+    <div class="call-phone"><strong>📱 Phone: </strong> &#43;91 9898204057 (Mukesh Patel) </div>
     
     
-    <div class="call-email"><strong>Email: </strong>
+    <div class="call-phone"><strong>📱 Phone: </strong> &#43;91 9422556559 (Parth Patel) </div>
+    
+    
+    <div class="call-email"><strong>✉️ Email: </strong>
       <a href="mailto:dynosure.india@gmail.com">
         dynosure.india@gmail.com
       </a>
     </div>
     
     
-    <div class="call-email"><strong>address: </strong>
+    <div class="call-address"><strong>📍 Address: </strong>
       <a href="https://www.google.co.in/maps">
         Vadodara, Gujarat, India
       </a>
@@ -148,25 +158,73 @@
     
 </div>
 
-        <div class="content mt-4"></div>
+      </div>
+    </div>
+    <div class="col-12 col-md-5">
+      <div class="contact-form-card">
+        <h2>Send Us an Inquiry</h2>
+        <form id="contact-form" class="inquiry-form" action="https://formspree.io/f/dynosure.india@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label for="product">Product of Interest</label>
+            <select id="product" name="product">
+              <option value="">— Select a product —</option>
+              <option value="SLCANv1">DynoSure SLCANv1</option>
+              <option value="SLCAN GPIO">DynoSure SLCAN GPIO</option>
+              <option value="LoggerV1">DynoSure LoggerV1</option>
+              <option value="Other">Other / General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+          </div>
+          <button type="submit" class="button button-primary">Submit Inquiry</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
 
   </div>
 
   <div class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          <h3 class="footer-title">DynoSure</h3>
-          <div id="footer-menu" class="footer-menu">
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">DynoSure</h3>
+        <div class="footer-contact">
+          <p>Affordable automotive diagnostic tools — engineered in India.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-contact">
+          
+          <p>✉️ <a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></p>
+          
+          
+          <p>📱 &#43;91 9898204057 (Mukesh Patel)</p>
+          
+          
+          <p>📱 &#43;91 9422556559 (Parth Patel)</p>
+          
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Links</h3>
+        <div id="footer-menu" class="footer-menu">
   <ul>
     
     
@@ -191,8 +249,6 @@
   </ul>
 </div>
 
-          
-        </div>
       </div>
     </div>
   </div>
@@ -204,6 +260,8 @@
         <div class="sub-footer-inner">
           
           
+            <div class="copyright">© 2026 Maruti Electronics and Electrical. All rights reserved.</div>
+          
         </div>
       </div>
     </div>
@@ -217,11 +275,15 @@
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+    
+  
+  <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
 
   
 
+
   
+
 
 </body>
 

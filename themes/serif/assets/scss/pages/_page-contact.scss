@@ -1,0 +1,101 @@
+.page-contact {
+  .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contact-info-card,
+  .contact-form-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $primary;
+      display: inline-block;
+    }
+  }
+  .call {
+    background: transparent;
+    .call-box-top {
+      padding: 0;
+    }
+    .call-phone,
+    .call-email,
+    .call-address {
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+      line-height: 1.5;
+      a {
+        color: $primary;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .inquiry-form {
+    .form-group {
+      margin-bottom: 18px;
+      label {
+        display: block;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #333;
+        margin-bottom: 6px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid #d0d0d0;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-family: inherit;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        &:focus {
+          outline: none;
+          border-color: $primary;
+          box-shadow: 0 0 0 3px rgba($primary, 0.15);
+        }
+      }
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+      select {
+        appearance: auto;
+        cursor: pointer;
+      }
+    }
+    .button-primary {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: $primary;
+      color: #fff;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      &:hover {
+        background-color: darken($primary, 8%);
+        transform: translateY(-1px);
+      }
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}

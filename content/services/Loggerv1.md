@@ -1,90 +1,76 @@
 ---
-title: "DynoSure LoggerV1 (CAN 2.0B Data Logger)"
+title: "DynoSure LoggerV1 — Standalone CAN 2.0B Data Logger"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
 weight: 3
-image: "images/LOGGGER.jpeg"
+image: "images/LOGGGER_no_bg.png"
 ---
 
-The first prototype of our CAN 2.0B Logger (DynoSure LoggerV1) has been successfully tested and verified! Following the successful launch of our first product, the SLCANv1 (a USB-to-CAN tool supporting the widely used BUSMASTER software), we are proud to introduce another essential tool designed specifically for automotive engineering.
+The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard **Vector ASC file format** — no proprietary software, no vendor lock-in.
 
 <!--more-->
 
-![DynoSure LoggerV1](/images/LOGGGER.jpeg)
+![DynoSure LoggerV1](/images/LOGGGER_no_bg.png)
+
+---
 
 # 💡 Why Did We Build the DynoSure LoggerV1?
 
-While commercial tools for CAN logging are available, many are prohibitively expensive for the Indian automotive sector or trap users in restrictive, closed ecosystems. We wanted to change that by building something **accessible** and **open**.
+While commercial CAN logging tools are available, many are prohibitively expensive for the Indian automotive sector or trap users in restrictive, closed ecosystems. We wanted to change that by building something **accessible** and **open**.
 
-# 🛠️ Key Features & Advantages
+---
 
-## Open Standards
-Logs data using the standard **Vector ASC file format**. Say goodbye to vendor lock-in!
+# Key Advantages
 
-## Future-Proof
-Features **user-end software update** capabilities, allowing us to seamlessly push continuous improvements and keep your hardware up to date.
+| Feature | Benefit |
+|---|---|
+| **Open Standards** | Logs in Vector ASC format — compatible with any CAN analysis tool |
+| **Standalone Operation** | No PC required during logging — connect, power on, and capture |
+| **Future-Proof** | User-end firmware updates for continuous improvements |
+| **Cost-Effective** | Premium performance at a price point suited for the Indian market |
 
-## Cost-Effective
-Engineered to deliver **premium performance** at a price point that makes sense for the Indian automotive industry.
+---
 
 # Specifications
 
-## Supported CAN Protocols:
-CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID), CAN-FD (Flexible Data Rate) for high-speed applications
+| Parameter | Details |
+|---|---|
+| **Supported CAN Protocols** | CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID) |
+| **USB Interface** | USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0) |
+| **Bitrate Configuration** | Configured via `configuration.txt` on the microSD card:<br>• `1` = 500 kbps (default)<br>• `2` = 1 Mbps<br>• `3` = 250 kbps |
+| **Data Storage** | Onboard microSD card for offline CAN data capture |
+| **Log Format** | Vector ASC (industry-standard) |
+| **Logging Features** | Timestamped messages, configurable ID filters |
+| **Power Supply & Operating Modes** | • **Logging Mode**: Requires **+12V DC** external power supply via DB9 connector (**Pin 9: +12V**, **Pin 3: GND**)<br>• **USB Mode**: USB powered — acts as a standard **microSD Card Reader** to copy logs to PC |
+| **Firmware Update** | User-programmable (customer-end firmware update capability) |
+| **Operating Temperature** | Extended range — suitable for industrial & automotive environments |
 
-## USB Interface:
+> **Note:** The LoggerV1 supports CAN 2.0A and CAN 2.0B protocols. CAN-FD is not supported on this product. For CAN-FD requirements, see our [SLCANv1](/services/product/) or [SLCAN GPIO](/services/slcangpio/) adapters.
 
-USB 2.0 Full-Speed, Backward compatible with USB 1.1 and forward-compatible with USB 3.0
+---
 
-## Bitrate Support:
+# Downloads
 
-Standard CAN bit rates: 10 kbps, 20 kbps, 50 kbps, 83.3 kbps, 100 kbps, 125 kbps, 250 kbps, 500 kbps, 750 kbps, 1 Mbps
+| Resource | Link |
+|---|---|
+| 📄 Product Datasheet | [⬇️ Download](./../../files/DynoSure_Logger_Datasheet.pdf) |
+| 🐍 Log to Vector ASC Converter | [⬇️ Download](./../../files/log2Asc.py) |
+| ⚙️ ASC to Excel Converter | [⬇️ Download](./../../files/python_code_for_asc_excel.zip) |
 
-## Data Logging Features:
+---
 
-Onboard storage for offline CAN data capture, Timestamped message logging for accurate analysis, Configurable filters to log specific CAN IDs
+# Trusted By
 
-## Power Supply:
+- Bgauss Pvt Ltd.
+- RTCON Engineering
+- Jindal Mobilitric Pvt Ltd.
+- MATEL Motion and Energy Solutions Pvt Ltd.
+- TRONTEK ELECTRONICS LIMITED
+- Lord's Automative Private Limited
 
-Fully powered via USB — no external power required
-
-## Thermal Environment:
-
-Designed for extended temperature ranges, making it suitable for industrial and automotive environments
-
-# Software & Platform Support
-
-## Appears as a virtual COM port — no custom drivers required
-
-## Compatible with popular CAN analysis and development tools:
-
-**BusMaster**, Python (python-can), C/C++ libraries
-
-## Supports major platforms:
-
-Windows, Linux
-
-## [⬇️ Download DynoSure LoggerV1 Datasheet](./../../files/DynoSure_USB_CAN_Adapter.pdf)
-
-## [⬇️ Download BUSMASTER for DynoSure LoggerV1 ](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe)
-
-## [⬇️ Download C library for DynoSure LoggerV1 ](./../../files/SLCAN_DLL_win.zip)
-
-## [⬇️ How to add DLL in your project ? ](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170)
-
-## [⬇️ Download python library for DynoSure LoggerV1 ](./../../files/slcanv1-python.zip)
-
-## [⬇️ Download documentation for python library](./../../files/slcanv1_documentation.pdf)
-
-# Our customers 
- ## Bgauss Pvt Ltd.
- ## RTCON Engineering.
- ## Jindal Mobilitric Pvt Ltd.
- ## MATEL Motion and Energy Solutions Pvt Ltd.
- ## TRONTEK ELECTRONICS LIMITED
- ## Lord's Automative Private Limited
+---
 
 We are committed to providing affordable, open, and powerful diagnostic tools to keep you moving forward.
 
-### **📞 Ready to learn more? For inquiries or to discuss how our tools can help your workflow, please connect with us: ✉️ Email: dynosure.india@gmail.com 📱 WhatsApp: +91 9422556559**
+### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559 (Parth Patel)**, or email **dynosure.india@gmail.com**
