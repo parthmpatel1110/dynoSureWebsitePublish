@@ -57,7 +57,7 @@ To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 # Software & Platform Support
 
 - Enumerates as a **Virtual COM Port** — no custom drivers required
-- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe)** — industry-standard CAN analysis tool
+- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)** — industry-standard CAN analysis tool
 - Works with **Python** (python-can), **C/C++** libraries, and any SLCAN-compatible software
 - GPIO control works through the same COM port — no additional interface needed
 - Supported on **Windows** and **Linux**
@@ -69,7 +69,7 @@ To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 | Resource | Link |
 |---|---|
 | 📄 Product Datasheet | [⬇️ Download](./../../files/DynoSure_SLCAN_GPIO_Datasheet.pdf) |
-| 🖥️ BUSMASTER Installer | [⬇️ Download](./../../files/BUSMASTER_Installer_Ver_4.1.1.exe) |
+| 🖥️ BUSMASTER Installer | [⬇️ Download](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe) |
 | ⚙️ C/C++ Library (DLL) | [⬇️ Download](./../../files/SLCAN_DLL_win.zip) |
 | 📖 How to Add DLL in Your Project | [⬇️ Guide](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) |
 | 🐍 Python Library | [⬇️ Download](./../../files/slcanv1-python.zip) |
@@ -88,4 +88,4 @@ To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 
 ---
 
-### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559 (Parth Patel)**, or email **dynosure.india@gmail.com**
+### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559**, or email **dynosure.india@gmail.com**

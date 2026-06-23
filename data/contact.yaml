@@ -1,6 +1,13 @@
 email: "dynosure.india@gmail.com"
 phone: "+91 9898204057 (Mukesh Patel)"
-phone2: "+91 9422556559 (Parth Patel)"
-address: "Vadodara, Gujarat, India"
-location: "https://www.google.co.in/maps"
+phone2: "+91 9422556559"
+address:
+  - "Maruti Electrical & Electronics"
+  - "GF-26, Shyam Vintage, Sama Savli Road, Vemali,"
+  - "Vadodara, Gujarat, India, 391740"
+GST: "24ALPPP7508Q2Z7"
+location: "https://maps.app.goo.gl/23gMj73f1KnRgzrx9"
 contact_button_link: "/contact"
+
+# If you have a specific Formspree Form ID from your dashboard, uncomment and set it here:
+formspree_id: "xrgwwdqo"

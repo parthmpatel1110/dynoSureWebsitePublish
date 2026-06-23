@@ -13,10 +13,21 @@
       </a>
     </div>
     {{ end }}
-    {{ if hugo.Data.contact.address }}
+    {{ if and hugo.Data.contact.address (ne .show_address "false") }}
     <div class="call-address"><strong>📍 Address: </strong>
       <a href="{{ hugo.Data.contact.location }}">
-        {{ hugo.Data.contact.address }}
+        {{ if reflect.IsSlice hugo.Data.contact.address }}
+          {{ delimit hugo.Data.contact.address "<br>" | safeHTML }}
+        {{ else }}
+          {{ hugo.Data.contact.address | safeHTML }}
+        {{ end }}
+      </a>
+    </div>
+    {{ end }}
+    {{ if hugo.Data.contact.GST }}
+    <div class="GST"><strong>📍 GST NO: </strong>
+      <a>
+        {{ hugo.Data.contact.GST }}
       </a>
     </div>
     {{ end }}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Contact - DynoSure</title>
@@ -19,9 +19,7 @@
   
   
   
-    
-  
-  <link rel="stylesheet" href="/css/style.min.92143d4055ab591cd4398a1f2d85500c8117e09e142fd43f2c1b5faf52bf4715.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   
 
@@ -29,8 +27,8 @@
     
     <meta property="og:title" content="Contact"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.dynosure.co.in/contact/"/>
-    <meta property="og:image" content="https://www.dynosure.co.in/images/logo/dynoSure.svg"/>
+    <meta property="og:url" content="http://localhost:1313/contact/"/>
+    <meta property="og:image" content="http://localhost:1313/images/logo/dynoSure.svg"/>
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@dynosure"/>
@@ -138,7 +136,7 @@
     <div class="call-phone"><strong>📱 Phone: </strong> &#43;91 9898204057 (Mukesh Patel) </div>
     
     
-    <div class="call-phone"><strong>📱 Phone: </strong> &#43;91 9422556559 (Parth Patel) </div>
+    <div class="call-phone"><strong>📱 Phone: </strong> &#43;91 9422556559 </div>
     
     
     <div class="call-email"><strong>✉️ Email: </strong>
@@ -149,8 +147,17 @@
     
     
     <div class="call-address"><strong>📍 Address: </strong>
-      <a href="https://www.google.co.in/maps">
-        Vadodara, Gujarat, India
+      <a href="https://maps.app.goo.gl/23gMj73f1KnRgzrx9">
+        
+          Maruti Electrical & Electronics<br>GF-26, Shyam Vintage, Sama Savli Road, Vemali,<br>Vadodara, Gujarat, India, 391740
+        
+      </a>
+    </div>
+    
+    
+    <div class="GST"><strong>📍 GST NO: </strong>
+      <a>
+        24ALPPP7508Q2Z7
       </a>
     </div>
     
@@ -163,39 +170,137 @@
     <div class="col-12 col-md-5">
       <div class="contact-form-card">
         <h2>Send Us an Inquiry</h2>
-        <form id="contact-form" class="inquiry-form" action="https://formspree.io/f/dynosure.india@gmail.com" method="POST">
+        
+        <div data-fs-success class="alert alert-success" style="display: none; padding: 20px; border-radius: 8px; background-color: #eafaf1; color: #196f3d; border: 1px solid #d4efdf; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <h4 style="margin-top: 0; margin-bottom: 8px; color: #196f3d; font-weight: bold; font-size: 1.1rem;">✅ Submission Successful</h4>
+          <p style="margin: 0; font-size: 0.95rem; line-height: 1.4;">Thank you! Your inquiry has been submitted successfully. We will get back to you shortly.</p>
+        </div>
+        
+        <div data-fs-error class="alert alert-danger" style="display: none; padding: 20px; border-radius: 8px; background-color: #fdf2f2; color: #922b21; border: 1px solid #f9ebea; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <h4 style="margin-top: 0; margin-bottom: 8px; color: #922b21; font-weight: bold; font-size: 1.1rem;">❌ Submission Failed</h4>
+          <p class="error-msg-text" style="margin: 0; font-size: 0.95rem; line-height: 1.4;">Please review the fields below and try again.</p>
+        </div>
+
+        <form id="contact-form" class="inquiry-form" action="https://formspree.io/f/xrgwwdqo" method="POST">
           <div class="form-group">
             <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="text" id="name" name="name" placeholder="Your name" required data-fs-field>
+            <span data-fs-error="name" style="color: #c0392b; font-size: 0.85rem; margin-top: 4px; display: block; font-weight: bold;"></span>
           </div>
           <div class="form-group">
             <label for="email">Email Address *</label>
-            <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required data-fs-field>
+            <span data-fs-error="email" style="color: #c0392b; font-size: 0.85rem; margin-top: 4px; display: block; font-weight: bold;"></span>
           </div>
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX">
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" data-fs-field>
+            <span data-fs-error="phone" style="color: #c0392b; font-size: 0.85rem; margin-top: 4px; display: block; font-weight: bold;"></span>
           </div>
           <div class="form-group">
             <label for="product">Product of Interest</label>
-            <select id="product" name="product">
+            <select id="product" name="product" data-fs-field>
               <option value="">— Select a product —</option>
               <option value="SLCANv1">DynoSure SLCANv1</option>
               <option value="SLCAN GPIO">DynoSure SLCAN GPIO</option>
               <option value="LoggerV1">DynoSure LoggerV1</option>
               <option value="Other">Other / General Inquiry</option>
             </select>
+            <span data-fs-error="product" style="color: #c0392b; font-size: 0.85rem; margin-top: 4px; display: block; font-weight: bold;"></span>
           </div>
           <div class="form-group">
             <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirements..." required data-fs-field></textarea>
+            <span data-fs-error="message" style="color: #c0392b; font-size: 0.85rem; margin-top: 4px; display: block; font-weight: bold;"></span>
           </div>
-          <button type="submit" class="button button-primary">Submit Inquiry</button>
+          <button type="submit" class="button button-primary" data-fs-submit-btn>Submit Inquiry</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var form = event.target;
+    var submitBtn = form.querySelector('[data-fs-submit-btn]');
+    var successBox = document.querySelector('[data-fs-success]');
+    var errorBox = document.querySelector('[data-fs-error]');
+    var errorMsg = errorBox.querySelector('.error-msg-text');
+    
+    
+    successBox.style.display = 'none';
+    errorBox.style.display = 'none';
+    if (errorMsg) {
+      errorMsg.textContent = 'Please review the fields below and try again.';
+    }
+    form.querySelectorAll('[data-fs-error]').forEach(function(el) {
+      el.textContent = '';
+    });
+    
+    
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.dataset.originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Submitting...';
+      submitBtn.style.opacity = '0.7';
+    }
+    
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(function(response) {
+      return response.json().then(function(data) {
+        if (response.ok) {
+          successBox.style.display = 'block';
+          form.style.display = 'none';
+          form.reset();
+        } else {
+          var message = 'Submission failed. Please check your fields and try again.';
+          if (data && data.error) {
+            message = data.error;
+          } else if (data && data.errors && data.errors.length > 0) {
+            message = data.errors.map(function(e) { return e.message; }).join(', ');
+            
+            
+            data.errors.forEach(function(err) {
+              if (err.field) {
+                var errorSpan = form.querySelector('[data-fs-error="' + err.field + '"]');
+                if (errorSpan) {
+                  errorSpan.textContent = err.message;
+                }
+              }
+            });
+          }
+          if (errorMsg) {
+            errorMsg.textContent = message;
+          }
+          errorBox.style.display = 'block';
+        }
+      });
+    })
+    .catch(function(error) {
+      if (errorMsg) {
+        errorMsg.textContent = 'An unexpected error occurred. Please check your network connection and try again.';
+      }
+      errorBox.style.display = 'block';
+    })
+    .finally(function() {
+      if (submitBtn && form.style.display !== 'none') {
+        submitBtn.disabled = false;
+        submitBtn.textContent = submitBtn.dataset.originalText || 'Submit Inquiry';
+        submitBtn.style.opacity = '1';
+      }
+    });
+  });
+</script>
 
   </div>
 
@@ -218,7 +323,7 @@
           <p>📱 &#43;91 9898204057 (Mukesh Patel)</p>
           
           
-          <p>📱 &#43;91 9422556559 (Parth Patel)</p>
+          <p>📱 &#43;91 9422556559</p>
           
         </div>
       </div>
@@ -260,7 +365,7 @@
         <div class="sub-footer-inner">
           
           
-            <div class="copyright">© 2026 Maruti Electronics and Electrical. All rights reserved.</div>
+            <div class="copyright">© 2026 Maruti Electrical & Electronics. All rights reserved.</div>
           
         </div>
       </div>
@@ -275,15 +380,11 @@
   
 
   
-    
-  
-  <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+  <script type="text/javascript" src="/js/scripts.js"></script>
 
   
 
-
   
-
 
 </body>
 

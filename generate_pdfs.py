@@ -135,7 +135,7 @@ def draw_single_page_decorations(canvas, doc):
     
     canvas.setFillColor(colors.white)
     canvas.setFont('Helvetica', 8)
-    canvas.drawString(36, 11, "© 2026 Maruti Electronics and Electrical. All rights reserved.")
+    canvas.drawString(36, 11, "© 2026 Maruti Electrical & Electronics. All rights reserved.")
     canvas.drawRightString(559, 11, "www.dynosure.co.in")
     canvas.restoreState()
 
@@ -156,7 +156,7 @@ def draw_catalog_decorations(canvas, doc):
         
         canvas.setFillColor(colors.white)
         canvas.setFont('Helvetica-Bold', 11)
-        canvas.drawString(36, 18, "Maruti Electronics and Electrical")
+        canvas.drawString(36, 18, "Maruti Electrical & Electronics")
         canvas.drawRightString(559, 18, "PRODUCT CATALOG — 2026")
     else:
         # Standard page header
@@ -179,7 +179,7 @@ def draw_catalog_decorations(canvas, doc):
         
         canvas.setFillColor(colors.white)
         canvas.setFont('Helvetica', 8)
-        canvas.drawString(36, 11, "© 2026 Maruti Electronics and Electrical. All rights reserved.")
+        canvas.drawString(36, 11, "© 2026 Maruti Electrical & Electronics. All rights reserved.")
         canvas.drawRightString(559, 11, f"Page {doc.page} | www.dynosure.co.in")
     canvas.restoreState()
 
@@ -267,7 +267,7 @@ def generate_slcanv1():
     right_flow.append(make_table(["DB9 Pin", "Assignment"], pinout_data, [50, 150]))
     
     right_flow.append(Spacer(1, 10))
-    right_flow.append(Paragraph("<b>Inquiries & Ordering:</b><br/>Email: <b>dynosure.india@gmail.com</b><br/>Mobile: <b>+91 9898204057 (Mukesh Patel)</b><br/>Mobile 2: <b>+91 9422556559 (Parth Patel)</b>", body_style))
+    right_flow.append(Paragraph("<b>Inquiries & Ordering:</b><br/>Email: <b>dynosure.india@gmail.com</b><br/>Mobile: <b>+91 9898204057 (Mukesh Patel)</b><br/>Mobile 2: <b>+91 9422556559 </b>", body_style))
     
     col_table = Table([[left_flow, right_flow]], colWidths=[310, 210])
     col_table.setStyle(TableStyle([

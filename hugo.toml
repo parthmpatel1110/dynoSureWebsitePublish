@@ -51,7 +51,7 @@ title = "DynoSure"
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = "© 2026 Maruti Electronics and Electrical. All rights reserved."
+    copyright_text = "© 2026 Maruti Electrical & Electronics. All rights reserved."
 
 
 

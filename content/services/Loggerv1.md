@@ -73,4 +73,4 @@ While commercial CAN logging tools are available, many are prohibitively expensi
 
 We are committed to providing affordable, open, and powerful diagnostic tools to keep you moving forward.
 
-### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559 (Parth Patel)**, or email **dynosure.india@gmail.com**
+### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559**, or email **dynosure.india@gmail.com**
