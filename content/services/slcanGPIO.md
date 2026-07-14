@@ -36,7 +36,7 @@ The 8 GPIO outputs are controlled by sending a special CAN message through the a
 
 | Parameter | Value |
 |---|---|
-| **CAN ID** | `0x1FFF` (Extended 29-bit) |
+| **CAN ID** | `0x1FFFFF` (Extended 29-bit) |
 | **DLC** | 2 |
 | **Byte 0** | GPIO control — each bit maps to one GPIO pin (bit 0 → GPIO 0, bit 7 → GPIO 7). Set `1` = HIGH, `0` = LOW |
 | **Byte 1** | `0xAA` (fixed identifier for GPIO command) |
@@ -50,7 +50,7 @@ To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 | Byte 0 | `0x15` | `0001 0101` |
 | Byte 1 | `0xAA` | `1010 1010` |
 
-> **Note:** The GPIO control message (ID `0x1FFF`) is intercepted by the adapter firmware and will NOT appear on the physical CAN bus. All other CAN messages transmit normally.
+> **Note:** The GPIO control message (ID `0x1FFFFF`) is intercepted by the adapter firmware and will NOT appear on the physical CAN bus. All other CAN messages transmit normally.
 
 ---
 

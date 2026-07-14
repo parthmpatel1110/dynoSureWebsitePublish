@@ -309,7 +309,7 @@ def generate_slcan_gpio():
     left_flow.append(Paragraph("The 8 GPIO outputs are controlled by sending a special CAN command message. This message is processed internally by the firmware and is <b>not</b> transmitted on the physical CAN bus.", body_style))
     
     proto_data = [
-        ("CAN ID", "<b>0x1FFF</b> (Extended 29-bit ID)"),
+        ("CAN ID", "<b>0x1FFFFF</b> (Extended 29-bit ID)"),
         ("DLC", "<b>2</b>"),
         ("Byte 0", "GPIO States (Bit 0 = GPIO 0 ... Bit 7 = GPIO 7). 1 = HIGH, 0 = LOW"),
         ("Byte 1", "<b>0xAA</b> (Fixed GPIO command identifier)"),
@@ -514,7 +514,7 @@ def generate_catalog():
     
     left_flow.append(Paragraph("GPIO Control Protocol", section_style))
     proto_data = [
-        ("CAN ID", "<b>0x1FFF</b> (Extended 29-bit ID)"),
+        ("CAN ID", "<b>0x1FFFFF</b> (Extended 29-bit ID)"),
         ("DLC", "<b>2</b>"),
         ("Byte 0", "GPIO States (Bit 0 = GPIO 0 ... Bit 7 = GPIO 7). 1 = HIGH, 0 = LOW"),
         ("Byte 1", "<b>0xAA</b> (Fixed GPIO command identifier)"),
