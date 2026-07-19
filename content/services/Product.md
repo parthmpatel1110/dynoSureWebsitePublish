@@ -1,5 +1,5 @@
 ---
-title: "DynoSure SLCANv1 — USB to CAN Adapter"
+title: "DynoSure SLCANv1 - USB to CAN Adapter"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
@@ -7,7 +7,7 @@ weight: 1
 image: "images/Slcanv1_no_bg.png"
 ---
 
-The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for automotive engineers, embedded developers, and testing professionals. Based on the CANable2 firmware and the **Lawicel SLCAN protocol**, it exposes the CAN interface as a standard virtual COM port — making integration seamless with zero driver overhead.
+The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for automotive engineers, embedded developers, and testing professionals. Based on the CANable2 firmware and the **Lawicel SLCAN protocol**, it exposes the CAN interface as a standard virtual COM port - making integration seamless with zero driver overhead.
 
 <!--more-->
 
@@ -24,15 +24,15 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 | **USB Interface** | USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0) |
 | **Standard CAN Bitrates** | 10, 20, 50, 83.3, 100, 125, 250, 500, 750 kbps, 1 Mbps |
 | **CAN-FD Data Bitrates** | Up to 8 Mbps |
-| **Power Supply** | USB powered — no external supply required |
-| **Operating Temperature** | Extended range — suitable for industrial & automotive environments |
+| **Power Supply** | USB powered - no external supply required |
+| **Operating Temperature** | Extended range - suitable for industrial & automotive environments |
 
 ---
 
 # Software & Platform Support
 
-- Enumerates as a **Virtual COM Port** — no custom drivers required
-- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)** — industry-standard CAN analysis tool
+- Enumerates as a **Virtual COM Port** - no custom drivers required
+- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)** - industry-standard CAN analysis tool
 - Works with **Python** (python-can), **C/C++** libraries, and any SLCAN-compatible software
 - Supported on **Windows** and **Linux**
 

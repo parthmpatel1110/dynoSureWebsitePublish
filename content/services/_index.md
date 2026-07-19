@@ -1,6 +1,6 @@
 ---
 title: 'Products'
-description: 'DynoSure CAN Bus Tools — USB-to-CAN Adapters and Data Loggers'
+description: 'DynoSure CAN Bus Tools - USB-to-CAN Adapters and Data Loggers'
 intro_image: "images/dynosure_all_products_no_bg.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false

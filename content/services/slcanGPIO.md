@@ -1,5 +1,5 @@
 ---
-title: "DynoSure SLCAN GPIO — USB to CAN Adapter with GPIO Control"
+title: "DynoSure SLCAN GPIO - USB to CAN Adapter with GPIO Control"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
@@ -25,8 +25,8 @@ The DynoSure SLCAN GPIO combines a full-featured USB-to-CAN adapter with **8 con
 | **Standard CAN Bitrates** | 10, 20, 50, 83.3, 100, 125, 250, 500, 750 kbps, 1 Mbps |
 | **CAN-FD Data Bitrates** | Up to 8 Mbps |
 | **GPIO Channels** | 8 digital outputs |
-| **Power Supply** | USB powered — no external supply required |
-| **Operating Temperature** | Extended range — suitable for industrial & automotive environments |
+| **Power Supply** | USB powered - no external supply required |
+| **Operating Temperature** | Extended range - suitable for industrial & automotive environments |
 
 ---
 
@@ -38,7 +38,7 @@ The 8 GPIO outputs are controlled by sending a special CAN message through the a
 |---|---|
 | **CAN ID** | `0x1FFFFF` (Extended 29-bit) |
 | **DLC** | 2 |
-| **Byte 0** | GPIO control — each bit maps to one GPIO pin (bit 0 → GPIO 0, bit 7 → GPIO 7). Set `1` = HIGH, `0` = LOW |
+| **Byte 0** | GPIO control - each bit maps to one GPIO pin (bit 0 → GPIO 0, bit 7 → GPIO 7). Set `1` = HIGH, `0` = LOW |
 | **Byte 1** | `0xAA` (fixed identifier for GPIO command) |
 
 ### Example
@@ -56,10 +56,10 @@ To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 
 # Software & Platform Support
 
-- Enumerates as a **Virtual COM Port** — no custom drivers required
-- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)** — industry-standard CAN analysis tool
+- Enumerates as a **Virtual COM Port** - no custom drivers required
+- Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)** - industry-standard CAN analysis tool
 - Works with **Python** (python-can), **C/C++** libraries, and any SLCAN-compatible software
-- GPIO control works through the same COM port — no additional interface needed
+- GPIO control works through the same COM port - no additional interface needed
 - Supported on **Windows** and **Linux**
 
 ---

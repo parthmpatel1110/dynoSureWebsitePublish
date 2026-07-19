@@ -1,5 +1,5 @@
 ---
-title: "DynoSure LoggerV1 — Standalone CAN 2.0B Data Logger"
+title: "DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
@@ -7,7 +7,7 @@ weight: 3
 image: "images/LOGGGER_no_bg.png"
 ---
 
-The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard **Vector ASC file format** — no proprietary software, no vendor lock-in.
+The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard **Vector ASC file format** - no proprietary software, no vendor lock-in.
 
 <!--more-->
 
@@ -25,8 +25,8 @@ While commercial CAN logging tools are available, many are prohibitively expensi
 
 | Feature | Benefit |
 |---|---|
-| **Open Standards** | Logs in Vector ASC format — compatible with any CAN analysis tool |
-| **Standalone Operation** | No PC required during logging — connect, power on, and capture |
+| **Open Standards** | Logs in Vector ASC format - compatible with any CAN analysis tool |
+| **Standalone Operation** | No PC required during logging - connect, power on, and capture |
 | **Future-Proof** | User-end firmware updates for continuous improvements |
 | **Cost-Effective** | Premium performance at a price point suited for the Indian market |
 
@@ -42,9 +42,9 @@ While commercial CAN logging tools are available, many are prohibitively expensi
 | **Data Storage** | Onboard microSD card for offline CAN data capture |
 | **Log Format** | Vector ASC (industry-standard) |
 | **Logging Features** | Timestamped messages, configurable ID filters |
-| **Power Supply & Operating Modes** | • **Logging Mode**: Requires **+12V DC** external power supply via DB9 connector (**Pin 9: +12V**, **Pin 3: GND**)<br>• **USB Mode**: USB powered — acts as a standard **microSD Card Reader** to copy logs to PC |
+| **Power Supply & Operating Modes** | • **Logging Mode**: Requires **+12V DC** external power supply via DB9 connector (**Pin 9: +12V**, **Pin 3: GND**)<br>• **USB Mode**: USB powered - acts as a standard **microSD Card Reader** to copy logs to PC |
 | **Firmware Update** | User-programmable (customer-end firmware update capability) |
-| **Operating Temperature** | Extended range — suitable for industrial & automotive environments |
+| **Operating Temperature** | Extended range - suitable for industrial & automotive environments |
 
 > **Note:** The LoggerV1 supports CAN 2.0A and CAN 2.0B protocols. CAN-FD is not supported on this product. For CAN-FD requirements, see our [SLCANv1](/services/product/) or [SLCAN GPIO](/services/slcangpio/) adapters.
 

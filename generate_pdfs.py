@@ -157,7 +157,7 @@ def draw_catalog_decorations(canvas, doc):
         canvas.setFillColor(colors.white)
         canvas.setFont('Helvetica-Bold', 11)
         canvas.drawString(36, 18, "Maruti Electrical & Electronics")
-        canvas.drawRightString(559, 18, "PRODUCT CATALOG — 2026")
+        canvas.drawRightString(559, 18, "PRODUCT CATALOG - 2026")
     else:
         # Standard page header
         canvas.setFillColor(colors.HexColor('#865E5E'))

@@ -24,7 +24,7 @@ title = "DynoSure"
     mobile_height = "70px"
     desktop = "images/logo/dynoSure.svg"
     desktop_height = "150px"
-    alt = "DynoSure — CAN Bus Tools"
+    alt = "DynoSure - CAN Bus Tools"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
