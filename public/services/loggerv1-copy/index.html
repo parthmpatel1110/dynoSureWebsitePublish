@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>DynoSure SLCANv1 - USB to CAN Adapter - DynoSure</title>
+  <title>DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger - DynoSure</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/images/logo/dynoSure_32x32.svg">
 
@@ -19,18 +19,16 @@
   
   
   
-    
-  
-  <link rel="stylesheet" href="/css/style.min.92143d4055ab591cd4398a1f2d85500c8117e09e142fd43f2c1b5faf52bf4715.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   
 
   
     
-    <meta property="og:title" content="DynoSure SLCANv1 - USB to CAN Adapter"/>
+    <meta property="og:title" content="DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.dynosure.co.in/services/product/"/>
-    <meta property="og:image" content="https://www.dynosure.co.in/images/Slcanv1_no_bg.png"/>
+    <meta property="og:url" content="http://localhost:1313/services/loggerv1-copy/"/>
+    <meta property="og:image" content="http://localhost:1313/images/LOGGGER_no_bg.png"/>
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@dynosure"/>
@@ -126,9 +124,40 @@
   <div class="row justify-content-center">
     <div class="col-12 col-md-10">
       <div class="service service-single">
-        <h1 class="title">DynoSure SLCANv1 - USB to CAN Adapter</h1>
-        <div class="content"><p>The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for automotive engineers, embedded developers, and testing professionals. Based on the CANable2 firmware and the <strong>Lawicel SLCAN protocol</strong>, it exposes the CAN interface as a standard virtual COM port - making integration seamless with zero driver overhead.</p>
-<p><img src="/images/Slcanv1_no_bg.png" alt="DynoSure SLCANv1"></p>
+        <h1 class="title">DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger</h1>
+        <div class="content"><p>The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard <strong>Vector ASC file format</strong> - no proprietary software, no vendor lock-in.</p>
+<p><img src="/images/LOGGGER_no_bg.png" alt="DynoSure LoggerV1"></p>
+<hr>
+<h1 id="-why-did-we-build-the-dynosure-loggerv1">💡 Why Did We Build the DynoSure LoggerV1?</h1>
+<p>While commercial CAN logging tools are available, many are prohibitively expensive for the Indian automotive sector or trap users in restrictive, closed ecosystems. We wanted to change that by building something <strong>accessible</strong> and <strong>open</strong>.</p>
+<hr>
+<h1 id="key-advantages">Key Advantages</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Feature</th>
+					<th>Benefit</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Open Standards</strong></td>
+					<td>Logs in Vector ASC format - compatible with any CAN analysis tool</td>
+			</tr>
+			<tr>
+					<td><strong>Standalone Operation</strong></td>
+					<td>No PC required during logging - connect, power on, and capture</td>
+			</tr>
+			<tr>
+					<td><strong>Future-Proof</strong></td>
+					<td>User-end firmware updates for continuous improvements</td>
+			</tr>
+			<tr>
+					<td><strong>Cost-Effective</strong></td>
+					<td>Premium performance at a price point suited for the Indian market</td>
+			</tr>
+	</tbody>
+</table>
 <hr>
 <h1 id="specifications">Specifications</h1>
 <table>
@@ -140,28 +169,36 @@
 	</thead>
 	<tbody>
 			<tr>
-					<td><strong>Microcontroller</strong></td>
-					<td>STM32G4 series @ 170 MHz</td>
-			</tr>
-			<tr>
-					<td><strong>CAN Protocols</strong></td>
-					<td>CAN 2.0A (11-bit), CAN 2.0B (29-bit), CAN-FD</td>
+					<td><strong>Supported CAN Protocols</strong></td>
+					<td>CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID)</td>
 			</tr>
 			<tr>
 					<td><strong>USB Interface</strong></td>
 					<td>USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0)</td>
 			</tr>
 			<tr>
-					<td><strong>Standard CAN Bitrates</strong></td>
-					<td>10, 20, 50, 83.3, 100, 125, 250, 500, 750 kbps, 1 Mbps</td>
+					<td><strong>Bitrate Configuration</strong></td>
+					<td>Configured via <code>configuration.txt</code> on the microSD card:<br>• <code>1</code> = 500 kbps (default)<br>• <code>2</code> = 1 Mbps<br>• <code>3</code> = 250 kbps</td>
 			</tr>
 			<tr>
-					<td><strong>CAN-FD Data Bitrates</strong></td>
-					<td>Up to 8 Mbps</td>
+					<td><strong>Data Storage</strong></td>
+					<td>Onboard microSD card for offline CAN data capture</td>
 			</tr>
 			<tr>
-					<td><strong>Power Supply</strong></td>
-					<td>USB powered - no external supply required</td>
+					<td><strong>Log Format</strong></td>
+					<td>Vector ASC (industry-standard)</td>
+			</tr>
+			<tr>
+					<td><strong>Logging Features</strong></td>
+					<td>Timestamped messages, configurable ID filters</td>
+			</tr>
+			<tr>
+					<td><strong>Power Supply &amp; Operating Modes</strong></td>
+					<td>• <strong>Logging Mode</strong>: Requires <strong>+12V DC</strong> external power supply via DB9 connector (<strong>Pin 9: +12V</strong>, <strong>Pin 3: GND</strong>)<br>• <strong>USB Mode</strong>: USB powered - acts as a standard <strong>microSD Card Reader</strong> to copy logs to PC</td>
+			</tr>
+			<tr>
+					<td><strong>Firmware Update</strong></td>
+					<td>User-programmable (customer-end firmware update capability)</td>
 			</tr>
 			<tr>
 					<td><strong>Operating Temperature</strong></td>
@@ -169,14 +206,9 @@
 			</tr>
 	</tbody>
 </table>
-<hr>
-<h1 id="software--platform-support">Software &amp; Platform Support</h1>
-<ul>
-<li>Enumerates as a <strong>Virtual COM Port</strong> - no custom drivers required</li>
-<li>Fully compatible with <strong><a href="./../../files/BUSMASTER_Installer_Ver_3.2.2.exe">BUSMASTER</a></strong> - industry-standard CAN analysis tool</li>
-<li>Works with our <strong><a href="https://pypi.org/project/dynosure-slcanv1/">DynoSure Python Library</a></strong> (available via PyPI), <strong>python-can</strong>, <strong>C/C++</strong> libraries, and any SLCAN-compatible software</li>
-<li>Supported on <strong>Windows</strong> and <strong>Linux</strong></li>
-</ul>
+<blockquote>
+<p><strong>Note:</strong> The LoggerV1 supports CAN 2.0A and CAN 2.0B protocols. CAN-FD is not supported on this product. For CAN-FD requirements, see our <a href="/services/product/">SLCANv1</a> or <a href="/services/slcangpio/">SLCAN GPIO</a> adapters.</p>
+</blockquote>
 <hr>
 <h1 id="downloads">Downloads</h1>
 <table>
@@ -189,27 +221,15 @@
 	<tbody>
 			<tr>
 					<td>📄 Product Datasheet</td>
-					<td><a href="./../../files/DynoSure_USB_CAN_Adapter.pdf">⬇️ Download</a></td>
+					<td><a href="./../../files/DynoSure_Logger_Datasheet.pdf">⬇️ Download</a></td>
 			</tr>
 			<tr>
-					<td>🖥️ BUSMASTER Installer</td>
-					<td><a href="./../../files/BUSMASTER_Installer_Ver_3.2.2.exe">⬇️ Download</a></td>
+					<td>🐍 Log to Vector ASC Converter</td>
+					<td><a href="./../../files/log2Asc.py">⬇️ Download</a></td>
 			</tr>
 			<tr>
-					<td>⚙️ C/C++ Library (DLL)</td>
-					<td><a href="./../../files/SLCAN_DLL_win.zip">⬇️ Download</a></td>
-			</tr>
-			<tr>
-					<td>📖 How to Add DLL in Your Project</td>
-					<td><a href="https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170">⬇️ Guide</a></td>
-			</tr>
-			<tr>
-					<td>🐍 Python Library (PyPI)</td>
-					<td><a href="https://pypi.org/project/dynosure-slcanv1/"><code>pip install dynosure-slcanv1</code></a></td>
-			</tr>
-			<tr>
-					<td>📖 Python Library Documentation</td>
-					<td><a href="./../../files/slcanv1_documentation.pdf">⬇️ Download</a></td>
+					<td>⚙️ ASC to Excel Converter</td>
+					<td><a href="./../../files/python_code_for_asc_excel.zip">⬇️ Download</a></td>
 			</tr>
 	</tbody>
 </table>
@@ -224,6 +244,7 @@
 <li>Lord&rsquo;s Automative Private Limited</li>
 </ul>
 <hr>
+<p>We are committed to providing affordable, open, and powerful diagnostic tools to keep you moving forward.</p>
 <h3 id="-ready-to-order-contact-us-at-91-9898204057-mukesh-patel-or-91-9422556559-or-email">📞 <strong>Ready to order?</strong> Contact us at <strong>+91 9898204057 (Mukesh Patel)</strong> or <strong>+91 9422556559</strong>, or email <strong><a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></strong></h3></div>
       </div>
     </div>
@@ -309,21 +330,15 @@
 
 
 
-  
-
-<script type="text/javascript" src="/js/services.min.9107b65a7df0422d8a274963e6b560062a6cdf62185570cfd584b43defa67279.js"></script>
+<script type="text/javascript" src="/js/services.js"></script>
 
 
   
-    
-  
-  <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+  <script type="text/javascript" src="/js/scripts.js"></script>
 
   
 
-
   
-
 
 </body>
 

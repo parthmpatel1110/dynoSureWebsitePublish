@@ -424,6 +424,60 @@ def generate_logger():
     
     doc.build(story, onFirstPage=draw_single_page_decorations, onLaterPages=draw_single_page_decorations)
 
+# ----------------- 3b. OBD2DB9 Datasheet -----------------
+def generate_obd2db9():
+    filename = f"{output_dir}/DynoSure_OBD2DB9_Datasheet.pdf"
+    doc = SimpleDocTemplate(filename, pagesize=A4, leftMargin=36, rightMargin=36, topMargin=60, bottomMargin=45)
+    story = []
+    
+    left_flow = []
+    left_flow.append(Paragraph("DynoSure OBD to DB9 Converter", title_style))
+    left_flow.append(Paragraph("<b>Model:</b> OBD2DB9 (Universal Diagnostic Connection Cable)", body_style))
+    left_flow.append(Paragraph("The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle's OBD-II port and standard CAN analysis tools. It routes standard CAN bus lines and vehicle battery power directly to the correct pins on your device, allowing you to connect and power your SLCANv1, SLCAN GPIO, or LoggerV1 interfaces directly from the vehicle's diagnostic port without additional wiring.", body_style))
+    
+    left_flow.append(Paragraph("Specifications", section_style))
+    specs_data = [
+        ("Cable Length", "1.0 Meter (Heavy-duty molded strain relief)"),
+        ("Conductors", "Pure low-resistance copper for high signal integrity"),
+        ("Shielding", "Foil and braid shield to prevent electromagnetic interference"),
+        ("Compatibility", "DynoSure SLCANv1, SLCAN GPIO, LoggerV1, and standard tools"),
+        ("Power Delivery", "Routes vehicle battery power (+12V) directly to DB9 Pin 9"),
+    ]
+    left_flow.append(make_table(["Parameter", "Details"], specs_data, [95, 210]))
+    
+    left_flow.append(Paragraph("Features", section_style))
+    left_flow.append(Paragraph("• <b>Molded Strain Relief</b>: Designed for rugged workshop and in-vehicle testing environments.<br/>• <b>Plug & Play Power</b>: Eliminates the need for external power supplies when using LoggerV1 in standalone logging mode.", body_style))
+    
+    right_flow = []
+    img_path = "d:/project_impossible/websiteGithub/static/images/Obdtodb_connection.jpeg"
+    right_flow.append(make_aspect_image(img_path, 180))
+    right_flow.append(Spacer(1, 10))
+    
+    right_flow.append(Paragraph("Pinout Mapping Table", section_style))
+    pinout_data = [
+        ("DB9 Pin", "OBD-II Pin", "Signal", "Description"),
+        ("<b>Pin 2</b>", "Pin 14", "<b>CAN-L</b>", "CAN Low line"),
+        ("<b>Pin 3</b>", "Pin 4 & 5", "<b>GND</b>", "Chassis/Signal Ground"),
+        ("<b>Pin 7</b>", "Pin 6", "<b>CAN-H</b>", "CAN High line"),
+        ("<b>Pin 9</b>", "Pin 16", "<b>+12V</b>", "Battery Power Out"),
+    ]
+    right_flow.append(make_table(["DB9 Pin", "OBD Pin", "Signal", "Description"], pinout_data[1:], [40, 45, 45, 70]))
+    
+    right_flow.append(Spacer(1, 15))
+    right_flow.append(Paragraph("<b>Inquiries & Ordering:</b><br/>Email: <b>dynosure.india@gmail.com</b><br/>Mobile: <b>+91 9898204057 (Mukesh Patel)</b>", body_style))
+    
+    col_table = Table([[left_flow, right_flow]], colWidths=[310, 210])
+    col_table.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 0),
+        ('RIGHTPADDING', (0,0), (-1,-1), 0),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ('TOPPADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(col_table)
+    
+    doc.build(story, onFirstPage=draw_single_page_decorations, onLaterPages=draw_single_page_decorations)
+
 # ----------------- 4. Combined Product Catalog -----------------
 def generate_catalog():
     filename = f"{output_dir}/DynoSure_Product_Catalog.pdf"
@@ -602,6 +656,48 @@ def generate_catalog():
     ]))
     story.append(col_table3)
     
+    story.append(PageBreak())
+    
+    # --- PAGE 5: OBD2DB9 ---
+    left_flow = []
+    left_flow.append(Paragraph("DynoSure OBD to DB9 Converter", title_style))
+    left_flow.append(Paragraph("<b>Model:</b> OBD2DB9 (Universal Diagnostic Connection Cable)", body_style))
+    left_flow.append(Paragraph("The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle's OBD-II port and standard CAN analysis tools. It routes standard CAN bus lines and vehicle battery power directly to the correct pins on your device, allowing you to connect and power your SLCANv1, SLCAN GPIO, or LoggerV1 interfaces directly from the vehicle's diagnostic port without additional wiring.", body_style))
+    
+    left_flow.append(Paragraph("Specifications", section_style))
+    specs_data_4 = [
+        ("Cable Length", "1.0 Meter (Heavy-duty molded strain relief)"),
+        ("Conductors", "Pure low-resistance copper for high signal integrity"),
+        # ("Shielding", "Foil and braid shield to prevent electromagnetic interference"),
+        ("Compatibility", "DynoSure SLCANv1, SLCAN GPIO, LoggerV1, and standard tools"),
+        ("Power Delivery", "Routes vehicle battery power (+12V) directly to DB9 Pin 9"),
+    ]
+    left_flow.append(make_table(["Parameter", "Details"], specs_data_4, [90, 220]))
+    
+    right_flow = []
+    img4 = "d:/project_impossible/websiteGithub/static/images/Obdtodb_connection.jpeg"
+    right_flow.append(make_aspect_image(img4, 180))
+    right_flow.append(Spacer(1, 10))
+    
+    right_flow.append(Paragraph("Pinout Mapping Table", section_style))
+    pinout_data_4 = [
+        ("Pin 2", "Pin 14", "<b>CAN-L</b>", "CAN Low line"),
+        ("Pin 3", "Pin 4 & 5", "<b>GND</b>", "Chassis/Signal Ground"),
+        ("Pin 7", "Pin 6", "<b>CAN-H</b>", "CAN High line"),
+        ("Pin 9", "Pin 16", "<b>+12V</b>", "Battery Power Out"),
+    ]
+    right_flow.append(make_table(["DB9 Pin", "OBD Pin", "Signal", "Description"], pinout_data_4, [40, 45, 45, 70]))
+    
+    col_table4 = Table([[left_flow, right_flow]], colWidths=[310, 210])
+    col_table4.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 0),
+        ('RIGHTPADDING', (0,0), (-1,-1), 0),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ('TOPPADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(col_table4)
+    
     doc.build(story, onFirstPage=draw_catalog_decorations, onLaterPages=draw_catalog_decorations)
 
 if __name__ == '__main__':
@@ -611,6 +707,8 @@ if __name__ == '__main__':
     generate_slcan_gpio()
     print("Generating LoggerV1 Datasheet...")
     generate_logger()
+    print("Generating OBD2DB9 Datasheet...")
+    generate_obd2db9()
     print("Generating Product Catalog...")
     generate_catalog()
     print("All PDFs generated successfully!")

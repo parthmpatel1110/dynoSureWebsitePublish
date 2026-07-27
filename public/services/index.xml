@@ -34,5 +34,12 @@
 				<guid>https://www.dynosure.co.in/services/loggerv1/</guid>
 				<description>&lt;p&gt;The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard &lt;strong&gt;Vector ASC file format&lt;/strong&gt; - no proprietary software, no vendor lock-in.&lt;/p&gt;</description>
 			</item>
+			<item>
+				<title>DynoSure OBD to DB9 Converter</title>
+				<link>https://www.dynosure.co.in/services/obd2db9/</link>
+				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+				<guid>https://www.dynosure.co.in/services/obd2db9/</guid>
+				<description>&lt;p&gt;The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle&amp;rsquo;s OBD-II port and your USB-to-CAN tools (including the DynoSure SLCANv1, SLCAN GPIO, and LoggerV1). Built to industrial quality standards, it ensures robust communication and seamless power delivery.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

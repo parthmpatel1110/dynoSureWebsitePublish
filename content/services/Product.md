@@ -33,7 +33,7 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 
 - Enumerates as a **Virtual COM Port** - no custom drivers required
 - Fully compatible with **[BUSMASTER](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe)** - industry-standard CAN analysis tool
-- Works with **Python** (python-can), **C/C++** libraries, and any SLCAN-compatible software
+- Works with our **[DynoSure Python Library](https://pypi.org/project/dynosure-slcanv1/)** (available via PyPI), **python-can**, **C/C++** libraries, and any SLCAN-compatible software
 - Supported on **Windows** and **Linux**
 
 ---
@@ -46,7 +46,7 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 | 🖥️ BUSMASTER Installer | [⬇️ Download](./../../files/BUSMASTER_Installer_Ver_3.2.2.exe) |
 | ⚙️ C/C++ Library (DLL) | [⬇️ Download](./../../files/SLCAN_DLL_win.zip) |
 | 📖 How to Add DLL in Your Project | [⬇️ Guide](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) |
-| 🐍 Python Library | [⬇️ Download](./../../files/slcanv1-python.zip) |
+| 🐍 Python Library (PyPI) | [`pip install dynosure-slcanv1`](https://pypi.org/project/dynosure-slcanv1/) |
 | 📖 Python Library Documentation | [⬇️ Download](./../../files/slcanv1_documentation.pdf) |
 
 ---

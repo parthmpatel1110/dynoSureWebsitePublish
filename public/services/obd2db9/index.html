@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>DynoSure SLCANv1 - USB to CAN Adapter - DynoSure</title>
+  <title>DynoSure OBD to DB9 Converter - DynoSure</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/images/logo/dynoSure_32x32.svg">
 
@@ -27,10 +27,10 @@
 
   
     
-    <meta property="og:title" content="DynoSure SLCANv1 - USB to CAN Adapter"/>
+    <meta property="og:title" content="DynoSure OBD to DB9 Converter"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.dynosure.co.in/services/product/"/>
-    <meta property="og:image" content="https://www.dynosure.co.in/images/Slcanv1_no_bg.png"/>
+    <meta property="og:url" content="https://www.dynosure.co.in/services/obd2db9/"/>
+    <meta property="og:image" content="https://www.dynosure.co.in/images/Obdtodb_connection.jpeg"/>
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@dynosure"/>
@@ -126,58 +126,59 @@
   <div class="row justify-content-center">
     <div class="col-12 col-md-10">
       <div class="service service-single">
-        <h1 class="title">DynoSure SLCANv1 - USB to CAN Adapter</h1>
-        <div class="content"><p>The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for automotive engineers, embedded developers, and testing professionals. Based on the CANable2 firmware and the <strong>Lawicel SLCAN protocol</strong>, it exposes the CAN interface as a standard virtual COM port - making integration seamless with zero driver overhead.</p>
-<p><img src="/images/Slcanv1_no_bg.png" alt="DynoSure SLCANv1"></p>
+        <h1 class="title">DynoSure OBD to DB9 Converter</h1>
+        <div class="content"><p>The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle&rsquo;s OBD-II port and your USB-to-CAN tools (including the DynoSure SLCANv1, SLCAN GPIO, and LoggerV1). Built to industrial quality standards, it ensures robust communication and seamless power delivery.</p>
+<p><img src="/images/Obdtodb_connection.jpeg" alt="DynoSure OBD to DB9 Connection"></p>
 <hr>
-<h1 id="specifications">Specifications</h1>
+<h1 id="-why-did-we-build-the-dynosure-obd-to-db9-converter">💡 Why Did We Build the DynoSure OBD to DB9 Converter?</h1>
+<p>Many commercial OBD-II to DB9 cables are either prohibitively expensive or use non-standard, proprietary pinouts that do not match standard CAN bus analysis tools. This makes connection and power routing difficult and prone to errors.</p>
+<p>We built the <strong>DynoSure OBD to DB9 Converter</strong> using the industry-standard wiring map. It routes the vehicle&rsquo;s standard CAN lines and battery power directly to the correct pins on your diagnostic tool, allowing you to connect and power your devices directly from the vehicle&rsquo;s diagnostic port without additional wiring.</p>
+<hr>
+<h1 id="specifications--pinout-mapping">Specifications &amp; Pinout Mapping</h1>
+<p>The converter is designed for automotive environments, featuring low-resistance copper conductors for signal integrity and durable molded connectors for strain relief.</p>
 <table>
 	<thead>
 			<tr>
-					<th>Parameter</th>
-					<th>Details</th>
+					<th>DB9 Pin</th>
+					<th>OBD-II Pin</th>
+					<th>Signal</th>
+					<th>Description</th>
 			</tr>
 	</thead>
 	<tbody>
 			<tr>
-					<td><strong>Microcontroller</strong></td>
-					<td>STM32G4 series @ 170 MHz</td>
+					<td><strong>Pin 2</strong></td>
+					<td><strong>Pin 14</strong></td>
+					<td><strong>CAN-L</strong></td>
+					<td>CAN Low line</td>
 			</tr>
 			<tr>
-					<td><strong>CAN Protocols</strong></td>
-					<td>CAN 2.0A (11-bit), CAN 2.0B (29-bit), CAN-FD</td>
+					<td><strong>Pin 3</strong></td>
+					<td><strong>Pin 4 &amp; 5</strong></td>
+					<td><strong>GND</strong></td>
+					<td>Chassis and Signal Ground</td>
 			</tr>
 			<tr>
-					<td><strong>USB Interface</strong></td>
-					<td>USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0)</td>
+					<td><strong>Pin 7</strong></td>
+					<td><strong>Pin 6</strong></td>
+					<td><strong>CAN-H</strong></td>
+					<td>CAN High line</td>
 			</tr>
 			<tr>
-					<td><strong>Standard CAN Bitrates</strong></td>
-					<td>10, 20, 50, 83.3, 100, 125, 250, 500, 750 kbps, 1 Mbps</td>
-			</tr>
-			<tr>
-					<td><strong>CAN-FD Data Bitrates</strong></td>
-					<td>Up to 8 Mbps</td>
-			</tr>
-			<tr>
-					<td><strong>Power Supply</strong></td>
-					<td>USB powered - no external supply required</td>
-			</tr>
-			<tr>
-					<td><strong>Operating Temperature</strong></td>
-					<td>Extended range - suitable for industrial &amp; automotive environments</td>
+					<td><strong>Pin 9</strong></td>
+					<td><strong>Pin 16</strong></td>
+					<td><strong>+12V Battery</strong></td>
+					<td>Power Input (routes vehicle power to LoggerV1)</td>
 			</tr>
 	</tbody>
 </table>
 <hr>
-<h1 id="software--platform-support">Software &amp; Platform Support</h1>
+<h1 id="key-features">Key Features</h1>
 <ul>
-<li>Enumerates as a <strong>Virtual COM Port</strong> - no custom drivers required</li>
-<li>Fully compatible with <strong><a href="./../../files/BUSMASTER_Installer_Ver_3.2.2.exe">BUSMASTER</a></strong> - industry-standard CAN analysis tool</li>
-<li>Works with our <strong><a href="https://pypi.org/project/dynosure-slcanv1/">DynoSure Python Library</a></strong> (available via PyPI), <strong>python-can</strong>, <strong>C/C++</strong> libraries, and any SLCAN-compatible software</li>
-<li>Supported on <strong>Windows</strong> and <strong>Linux</strong></li>
+<li><strong>Universal Compatibility</strong>: Works out of the box with DynoSure SLCANv1, SLCAN GPIO, and LoggerV1, as well as other standard-compliant CAN interfaces.</li>
+<li><strong>Power Delivery</strong>: Directly routes OBD Pin 16 (+12V Battery) to DB9 Pin 9 to supply required power to the LoggerV1 in standalone logging mode.</li>
 </ul>
-<hr>
+<!-- - **Industrial Quality**: Meticulously shielded wiring to prevent signal degradation and electromagnetic interference (EMI). -->
 <h1 id="downloads">Downloads</h1>
 <table>
 	<thead>
@@ -189,27 +190,7 @@
 	<tbody>
 			<tr>
 					<td>📄 Product Datasheet</td>
-					<td><a href="./../../files/DynoSure_USB_CAN_Adapter.pdf">⬇️ Download</a></td>
-			</tr>
-			<tr>
-					<td>🖥️ BUSMASTER Installer</td>
-					<td><a href="./../../files/BUSMASTER_Installer_Ver_3.2.2.exe">⬇️ Download</a></td>
-			</tr>
-			<tr>
-					<td>⚙️ C/C++ Library (DLL)</td>
-					<td><a href="./../../files/SLCAN_DLL_win.zip">⬇️ Download</a></td>
-			</tr>
-			<tr>
-					<td>📖 How to Add DLL in Your Project</td>
-					<td><a href="https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170">⬇️ Guide</a></td>
-			</tr>
-			<tr>
-					<td>🐍 Python Library (PyPI)</td>
-					<td><a href="https://pypi.org/project/dynosure-slcanv1/"><code>pip install dynosure-slcanv1</code></a></td>
-			</tr>
-			<tr>
-					<td>📖 Python Library Documentation</td>
-					<td><a href="./../../files/slcanv1_documentation.pdf">⬇️ Download</a></td>
+					<td><a href="./../../files/DynoSure_OBD2DB9_Datasheet.pdf">⬇️ Download</a></td>
 			</tr>
 	</tbody>
 </table>
@@ -224,7 +205,7 @@
 <li>Lord&rsquo;s Automative Private Limited</li>
 </ul>
 <hr>
-<h3 id="-ready-to-order-contact-us-at-91-9898204057-mukesh-patel-or-91-9422556559-or-email">📞 <strong>Ready to order?</strong> Contact us at <strong>+91 9898204057 (Mukesh Patel)</strong> or <strong>+91 9422556559</strong>, or email <strong><a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></strong></h3></div>
+<h3 id="-ready-to-order-contact-us-at-91-9898204057-mukesh-patel-or-91-9422556559-parth-patel-or-email">📞 <strong>Ready to order?</strong> Contact us at <strong>+91 9898204057 (Mukesh Patel)</strong> or <strong>+91 9422556559 (Parth Patel)</strong>, or email <strong><a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></strong></h3></div>
       </div>
     </div>
   </div>
