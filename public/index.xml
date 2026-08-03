@@ -42,6 +42,13 @@
 				<description>&lt;p&gt;The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle&amp;rsquo;s OBD-II port and your USB-to-CAN tools (including the DynoSure SLCANv1, SLCAN GPIO, and LoggerV1). Built to industrial quality standards, it ensures robust communication and seamless power delivery.&lt;/p&gt;</description>
 			</item>
 			<item>
+				<title>DynoSure CANviz — Browser-Based CAN Bus Analyzer</title>
+				<link>https://www.dynosure.co.in/services/canviz/</link>
+				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+				<guid>https://www.dynosure.co.in/services/canviz/</guid>
+				<description>&lt;p&gt;DynoSure CANviz is a browser-based, open-source CAN bus analyzer software. Based on the &lt;code&gt;canviz&lt;/code&gt; project developed by &lt;strong&gt;Chanchaldhiman&lt;/strong&gt;, it lets you plug in your USB-to-CAN adapter, run one command, and analyze CAN traffic instantly in your browser. No complex GUI installs, no accounts, and no internet connection required.&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>About</title>
 				<link>https://www.dynosure.co.in/about/</link>
 				<pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>

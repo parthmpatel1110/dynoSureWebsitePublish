@@ -698,6 +698,44 @@ def generate_catalog():
     ]))
     story.append(col_table4)
     
+    story.append(PageBreak())
+    
+    # --- PAGE 6: CANVIZ ---
+    left_flow = []
+    left_flow.append(Paragraph("DynoSure CANviz", title_style))
+    left_flow.append(Paragraph("<b>Product:</b> Browser-Based CAN Bus Analyzer", body_style))
+    left_flow.append(Paragraph("DynoSure CANviz is a modern, open-source CAN bus analyzer. Based on canviz by Chanchaldhiman, it runs entirely in your local browser and installs with a single pip command. Works with any standard USB-to-CAN hardware adapter, including SLCANv1 and SLCAN GPIO, putting frames, signals, and protocol decoders in front of you instantly.", body_style))
+    
+    left_flow.append(Paragraph("Features", section_style))
+    left_flow.append(Paragraph("• <b>Live Message Table</b>: virtual scrolling handles up to 2,000 frames/sec with zero drops.<br/>• <b>DBC Decoding & Plotting</b>: Upload a DBC file to plot signals in a live time-series graph.<br/>• <b>Passive Decoders</b>: Passive J1939 and CANopen (CiA 301 + 402) decoders built right into the user interface.", body_style))
+    
+    left_flow.append(Paragraph("Getting Started", section_style))
+    left_flow.append(Paragraph("<code>pip install dynosure-canviz</code><br/><code>canviz</code>", body_style))
+    
+    right_flow = []
+    img5 = "d:/project_impossible/websiteGithub/static/images/canviz_screenshot.jpg"
+    right_flow.append(make_aspect_image(img5, 180))
+    right_flow.append(Spacer(1, 10))
+    
+    right_flow.append(Paragraph("Information", section_style))
+    info_data = [
+        ("Platform", "Windows, Linux, macOS"),
+        ("PyPI Package", "dynosure-canviz"),
+        ("Source Code", "GitHub Repository"),
+        ("License", "MIT Open Source"),
+    ]
+    right_flow.append(make_table(["Attribute", "Details"], info_data, [60, 140]))
+    
+    col_table5 = Table([[left_flow, right_flow]], colWidths=[310, 210])
+    col_table5.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 0),
+        ('RIGHTPADDING', (0,0), (-1,-1), 0),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ('TOPPADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(col_table5)
+    
     doc.build(story, onFirstPage=draw_catalog_decorations, onLaterPages=draw_catalog_decorations)
 
 if __name__ == '__main__':

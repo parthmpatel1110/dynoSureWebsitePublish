@@ -13373,7 +13373,7 @@ ol {
   color: #505050; }
 
 .page-services-single .content img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 20px auto 30px;
