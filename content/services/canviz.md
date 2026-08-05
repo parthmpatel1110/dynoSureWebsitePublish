@@ -79,4 +79,4 @@ DynoSure CANviz works seamlessly with any standard USB-to-CAN hardware adapter, 
 
 ---
 
-### 📞 **Need assistance?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559 (Parth Patel)**, or email **dynosure.india@gmail.com**
+### 📞 **Need assistance?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559**, or email **dynosure.india@gmail.com**
