@@ -4,14 +4,14 @@ date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
 weight: 4
-image: "images/Obdtodb_connection.jpeg"
+image: "images/obdtodb9_cable_no_bg.jpg"
 ---
 
 The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle's OBD-II port and your USB-to-CAN tools (including the DynoSure SLCANv1, SLCAN GPIO, and LoggerV1). Built to industrial quality standards, it ensures robust communication and seamless power delivery.
 
 <!--more-->
 
-![DynoSure OBD to DB9 Connection](/images/Obdtodb_connection.jpeg)
+![DynoSure OBD to DB9 Cable](/images/obdtodb9_cable_no_bg.jpg)
 
 ---
 
@@ -23,7 +23,21 @@ We built the **DynoSure OBD to DB9 Converter** using the industry-standard wirin
 
 ---
 
-# Specifications & Pinout Mapping
+# 🔌 Connection & Wiring
+
+The OBD-II connector head is designed to fit standard vehicle diagnostic ports securely, routing signals over low-resistance copper cores.
+
+![DynoSure OBD to DB9 Connector](/images/obdtodb9_connector_no_bg.png)
+
+### Pinout Mapping & Connection Diagram
+
+The diagram below illustrates the exact wiring routing of CAN signals and vehicle battery power (+12V) through the connector.
+
+![DynoSure OBD to DB9 Connection](/images/Obdtodb_connection.jpeg)
+
+---
+
+# Specifications
 
 The converter is designed for automotive environments, featuring low-resistance copper conductors for signal integrity and durable molded connectors for strain relief.
 
@@ -40,7 +54,9 @@ The converter is designed for automotive environments, featuring low-resistance 
 
 - **Universal Compatibility**: Works out of the box with DynoSure SLCANv1, SLCAN GPIO, and LoggerV1, as well as other standard-compliant CAN interfaces.
 - **Power Delivery**: Directly routes OBD Pin 16 (+12V Battery) to DB9 Pin 9 to supply required power to the LoggerV1 in standalone logging mode.
-<!-- - **Industrial Quality**: Meticulously shielded wiring to prevent signal degradation and electromagnetic interference (EMI). -->
+- **Industrial Quality**: Meticulously shielded wiring to prevent signal degradation and electromagnetic interference (EMI).
+
+---
 
 # Downloads
 

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Homepage on DynoSure</title>
-		<link>https://www.dynosure.co.in/</link>
+		<link>http://localhost:1313/</link>
 		<description>Recent content in Homepage on DynoSure</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,54 +12,54 @@
 		
 			<lastBuildDate>Sun, 18 Nov 2018 12:33:46 +1000</lastBuildDate>
 		
-			<atom:link href="https://www.dynosure.co.in/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>DynoSure SLCANv1 - USB to CAN Adapter</title>
-				<link>https://www.dynosure.co.in/services/product/</link>
+				<link>http://localhost:1313/services/product/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>https://www.dynosure.co.in/services/product/</guid>
+				<guid>http://localhost:1313/services/product/</guid>
 				<description>&lt;p&gt;The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for automotive engineers, embedded developers, and testing professionals. Based on the CANable2 firmware and the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt;, it exposes the CAN interface as a standard virtual COM port - making integration seamless with zero driver overhead.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>DynoSure SLCAN GPIO - USB to CAN Adapter with GPIO Control</title>
-				<link>https://www.dynosure.co.in/services/slcangpio/</link>
+				<link>http://localhost:1313/services/slcangpio/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>https://www.dynosure.co.in/services/slcangpio/</guid>
+				<guid>http://localhost:1313/services/slcangpio/</guid>
 				<description>&lt;p&gt;The DynoSure SLCAN GPIO combines a full-featured USB-to-CAN adapter with &lt;strong&gt;8 configurable GPIO outputs&lt;/strong&gt;, giving you CAN bus communication and hardware control in a single compact device. Built on the CANable2 firmware with the &lt;strong&gt;Lawicel SLCAN protocol&lt;/strong&gt;, it appears as a virtual COM port and integrates seamlessly with BUSMASTER and other CAN tools.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger</title>
-				<link>https://www.dynosure.co.in/services/loggerv1/</link>
+				<link>http://localhost:1313/services/loggerv1/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>https://www.dynosure.co.in/services/loggerv1/</guid>
+				<guid>http://localhost:1313/services/loggerv1/</guid>
 				<description>&lt;p&gt;The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in the standard &lt;strong&gt;Vector ASC file format&lt;/strong&gt; - no proprietary software, no vendor lock-in.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>DynoSure OBD to DB9 Converter</title>
-				<link>https://www.dynosure.co.in/services/obd2db9/</link>
+				<link>http://localhost:1313/services/obd2db9/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>https://www.dynosure.co.in/services/obd2db9/</guid>
+				<guid>http://localhost:1313/services/obd2db9/</guid>
 				<description>&lt;p&gt;The DynoSure OBD to DB9 Converter provides a universal and reliable connection between your vehicle&amp;rsquo;s OBD-II port and your USB-to-CAN tools (including the DynoSure SLCANv1, SLCAN GPIO, and LoggerV1). Built to industrial quality standards, it ensures robust communication and seamless power delivery.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>DynoSure CANviz — Browser-Based CAN Bus Analyzer</title>
-				<link>https://www.dynosure.co.in/services/canviz/</link>
+				<link>http://localhost:1313/services/canviz/</link>
 				<pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-				<guid>https://www.dynosure.co.in/services/canviz/</guid>
+				<guid>http://localhost:1313/services/canviz/</guid>
 				<description>&lt;p&gt;DynoSure CANviz is a browser-based, open-source CAN bus analyzer software. Based on the &lt;code&gt;canviz&lt;/code&gt; project developed by &lt;strong&gt;Chanchaldhiman&lt;/strong&gt;, it lets you plug in your USB-to-CAN adapter, run one command, and analyze CAN traffic instantly in your browser. No complex GUI installs, no accounts, and no internet connection required.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>About</title>
-				<link>https://www.dynosure.co.in/about/</link>
+				<link>http://localhost:1313/about/</link>
 				<pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
-				<guid>https://www.dynosure.co.in/about/</guid>
+				<guid>http://localhost:1313/about/</guid>
 				<description>&lt;!-- ![About Us](/images/smartworks-coworking-cW4lLTavU80-unsplash.jpg) --&gt;&#xD;&#xA;&lt;!-- ## DynoSure --&gt;</description>
 			</item>
 			<item>
 				<title>Contact</title>
-				<link>https://www.dynosure.co.in/contact/</link>
+				<link>http://localhost:1313/contact/</link>
 				<pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
-				<guid>https://www.dynosure.co.in/contact/</guid>
+				<guid>http://localhost:1313/contact/</guid>
 				<description></description>
 			</item>
 	</channel>

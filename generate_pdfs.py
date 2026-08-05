@@ -449,7 +449,7 @@ def generate_obd2db9():
     left_flow.append(Paragraph("• <b>Molded Strain Relief</b>: Designed for rugged workshop and in-vehicle testing environments.<br/>• <b>Plug & Play Power</b>: Eliminates the need for external power supplies when using LoggerV1 in standalone logging mode.", body_style))
     
     right_flow = []
-    img_path = "d:/project_impossible/websiteGithub/static/images/Obdtodb_connection.jpeg"
+    img_path = "d:/project_impossible/websiteGithub/static/images/obdtodb9_cable_no_bg.png"
     right_flow.append(make_aspect_image(img_path, 180))
     right_flow.append(Spacer(1, 10))
     
@@ -675,7 +675,7 @@ def generate_catalog():
     left_flow.append(make_table(["Parameter", "Details"], specs_data_4, [90, 220]))
     
     right_flow = []
-    img4 = "d:/project_impossible/websiteGithub/static/images/Obdtodb_connection.jpeg"
+    img4 = "d:/project_impossible/websiteGithub/static/images/obdtodb9_cable_no_bg.png"
     right_flow.append(make_aspect_image(img4, 180))
     right_flow.append(Spacer(1, 10))
     

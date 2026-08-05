@@ -4,14 +4,14 @@ date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
 weight: 2
-image: "images/SLCAN_GPIO_no_bg.png"
+image: "images/SLCAN_GPIO_no_b.jpg"
 ---
 
 The DynoSure SLCAN GPIO combines a full-featured USB-to-CAN adapter with **8 configurable GPIO outputs**, giving you CAN bus communication and hardware control in a single compact device. Built on the CANable2 firmware with the **Lawicel SLCAN protocol**, it appears as a virtual COM port and integrates seamlessly with BUSMASTER and other CAN tools.
 
 <!--more-->
 
-![DynoSure SLCAN GPIO](/images/SLCAN_GPIO_no_bg.png)
+![DynoSure SLCAN GPIO](/images/SLCAN_GPIO_no_b.jpg)
 
 ---
 
