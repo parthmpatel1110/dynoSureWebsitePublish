@@ -4,14 +4,14 @@ date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
 weight: 5
-image: "images/canviz_demo.gif"
+image: "images/canviz_demo_trimmed.gif"
 ---
 
 DynoSure CANviz is a browser-based, open-source CAN bus analyzer software. Based on the `canviz` project developed by **Chanchaldhiman**, it lets you plug in your USB-to-CAN adapter, run one command, and analyze CAN traffic instantly in your browser. No complex GUI installs, no accounts, and no internet connection required.
 
 <!--more-->
 
-![DynoSure CANviz Screenshot](/images/canviz_demo.gif)
+![DynoSure CANviz Screenshot](/images/canviz_demo_trimmed.gif)
 
 ---
 
@@ -21,10 +21,10 @@ To install and run DynoSure CANviz on your local machine:
 
 ```bash
 # Install the library from PyPI
-pip install dynosure-canviz
+python -m pip install dynosure-canviz
 
 # Run the analyzer
-canviz
+python -m canviz
 # Your browser will open automatically at http://localhost:8080
 ```
 
