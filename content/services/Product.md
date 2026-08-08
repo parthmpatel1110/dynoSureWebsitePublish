@@ -62,4 +62,11 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 
 ---
 
-### 📞 **Ready to order?** Contact us at **+91 9898204057 (Mukesh Patel)** or **+91 9422556559**, or email **dynosure.india@gmail.com**
+# Order Online at
+### Robu.in : https://robu.in/product/dynosure-slcanv1-usb-to-can-converter/
+### Amazone.in : https://www.amazon.in/DynoSure-Slcanv1-Converter-Adapter-Busmaster/dp/B0G1ZNN2X7
+
+### **Want to know more** contact us at 
+- **+91 9898204057 (Mukesh Patel)**.
+- **+91 9422556559**.
+- **Email : dynosure.india@gmail.com**.

@@ -7,7 +7,8 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT, TA_JUSTIFY
 
 # Target Directory
-output_dir = "d:/project_impossible/websiteGithub/content/files"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+output_dir = os.path.join(base_dir, "content", "files")
 os.makedirs(output_dir, exist_ok=True)
 
 # Styles
@@ -212,13 +213,24 @@ def make_table(headers, data, col_widths):
     return t
 
 def make_aspect_image(img_path, target_width, align='CENTER'):
+    if not os.path.isabs(img_path):
+        img_path = os.path.join(base_dir, img_path)
+    print(f"DEBUG make_aspect_image: path={img_path}, target_width={target_width}")
     if not os.path.exists(img_path):
+        print(f"DEBUG make_aspect_image: FILE NOT FOUND! Returning Spacer(1, 1)")
         return Spacer(1, 1)
-    with PILImage.open(img_path) as img:
-        w, h = img.size
-    aspect = h / w
-    target_height = target_width * aspect
-    return Image(img_path, width=target_width, height=target_height, hAlign=align)
+    try:
+        with PILImage.open(img_path) as img:
+            w, h = img.size
+        aspect = h / w
+        target_height = target_width * aspect
+        print(f"DEBUG make_aspect_image: SUCCESS. w={w}, h={h}, aspect={aspect:.3f}, target_height={target_height:.2f}")
+        return Image(img_path, width=target_width, height=target_height, hAlign=align)
+    except Exception as e:
+        print(f"DEBUG make_aspect_image: ERROR opening image: {e}")
+        return Spacer(1, 1)
+
+
 
 # ----------------- 1. SLCANv1 Datasheet -----------------
 def generate_slcanv1():
@@ -246,12 +258,12 @@ def generate_slcanv1():
     left_flow.append(make_table(["Parameter", "Details"], specs_data, [100, 205]))
     
     right_flow = []
-    img_path = "d:/project_impossible/websiteGithub/static/images/Slcanv1_no_bg.png"
+    img_path = "static/images/Slcanv1_no_bg.png"
     right_flow.append(make_aspect_image(img_path, 180))
     right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("DB9 Pinout Assignment", section_style))
-    right_flow.append(make_aspect_image("d:/project_impossible/websiteGithub/static/images/db9_connector.png", 90))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
     right_flow.append(Spacer(1, 5))
     pinout_data = [
         ("Pin 1", "Not Connected"),
@@ -317,12 +329,12 @@ def generate_slcan_gpio():
     left_flow.append(make_table(["Field", "Value / Description"], proto_data, [50, 255]))
     
     right_flow = []
-    img_path = "d:/project_impossible/websiteGithub/static/images/SLCAN_GPIO_no_bg.png"
+    img_path = "static/images/SLCAN_GPIO_no_b.jpg"
     right_flow.append(make_aspect_image(img_path, 180))
     right_flow.append(Spacer(1, 5))
     
     right_flow.append(Paragraph("DB9 CAN Pinout", section_style))
-    right_flow.append(make_aspect_image("d:/project_impossible/websiteGithub/static/images/db9_connector.png", 90))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
     right_flow.append(Spacer(1, 5))
     pinout_data_2 = [
         ("Pin 2", "<b>CAN-L</b> (CAN Low)"),
@@ -390,12 +402,12 @@ def generate_logger():
     left_flow.append(make_table(["Key Value", "Resulting CAN Bus Speed"], bitrate_data[1:], [60, 245]))
     
     right_flow = []
-    img_path = "d:/project_impossible/websiteGithub/static/images/LOGGGER_no_bg.png"
+    img_path = "static/images/LOGGGER_no_bg.png"
     right_flow.append(make_aspect_image(img_path, 180))
     right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("DB9 CAN & Power Pinout", section_style))
-    right_flow.append(make_aspect_image("d:/project_impossible/websiteGithub/static/images/db9_connector.png", 90))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
     right_flow.append(Spacer(1, 5))
     pinout_data_3 = [
         ("Pin 2", "<b>CAN-L</b> (CAN Low)"),
@@ -449,7 +461,7 @@ def generate_obd2db9():
     left_flow.append(Paragraph("• <b>Molded Strain Relief</b>: Designed for rugged workshop and in-vehicle testing environments.<br/>• <b>Plug & Play Power</b>: Eliminates the need for external power supplies when using LoggerV1 in standalone logging mode.", body_style))
     
     right_flow = []
-    img_path = "d:/project_impossible/websiteGithub/static/images/obdtodb9_cable_no_bg.png"
+    img_path = "static/images/obdtodb9_cable_no_bg.jpg"
     right_flow.append(make_aspect_image(img_path, 180))
     right_flow.append(Spacer(1, 10))
     
@@ -492,7 +504,7 @@ def generate_catalog():
     
     story.append(Spacer(1, 100)) # Space to push image to white area
     
-    img_path = "d:/project_impossible/websiteGithub/static/images/dynosure_all_products_no_bg.png"
+    img_path = "static/images/dynosure_all_products_no_bg.png"
     story.append(make_aspect_image(img_path, 380))
     story.append(Spacer(1, 20))
     
@@ -522,12 +534,12 @@ def generate_catalog():
     left_flow.append(make_table(["Parameter", "Details"], specs_data_1, [90, 215]))
     
     right_flow = []
-    img1 = "d:/project_impossible/websiteGithub/static/images/Slcanv1_no_bg.png"
+    img1 = "static/images/Slcanv1_no_bg.png"
     right_flow.append(make_aspect_image(img1, 180))
     right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("DB9 Pinout Assignment", section_style))
-    right_flow.append(make_aspect_image("d:/project_impossible/websiteGithub/static/images/db9_connector.png", 90))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
     right_flow.append(Spacer(1, 5))
     pinout_data_1 = [
         ("Pin 2", "<b>CAN-L</b> (CAN Low)"),
@@ -576,12 +588,12 @@ def generate_catalog():
     left_flow.append(make_table(["Field", "Value / Description"], proto_data, [50, 255]))
     
     right_flow = []
-    img2 = "d:/project_impossible/websiteGithub/static/images/SLCAN_GPIO_no_bg.png"
+    img2 = "static/images/SLCAN_GPIO_no_b.jpg"
     right_flow.append(make_aspect_image(img2, 180))
     right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("DB9 CAN Pinout", section_style))
-    right_flow.append(make_aspect_image("d:/project_impossible/websiteGithub/static/images/db9_connector.png", 90))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
     right_flow.append(Spacer(1, 5))
     pinout_data_2 = [
         ("Pin 2", "<b>CAN-L</b> (CAN Low)"),
@@ -630,12 +642,12 @@ def generate_catalog():
     left_flow.append(make_table(["Key Value", "Resulting CAN Bus Speed"], bitrate_data[1:], [60, 245]))
     
     right_flow = []
-    img3 = "d:/project_impossible/websiteGithub/static/images/LOGGGER_no_bg.png"
+    img3 = "static/images/LOGGGER_no_bg.png"
     right_flow.append(make_aspect_image(img3, 180))
     right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("DB9 CAN & Power Pinout", section_style))
-    right_flow.append(make_aspect_image("d:/project_impossible/websiteGithub/static/images/db9_connector.png", 90))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
     right_flow.append(Spacer(1, 5))
     pinout_data_3 = [
         ("Pin 2", "<b>CAN-L</b> (CAN Low)"),
@@ -675,7 +687,7 @@ def generate_catalog():
     left_flow.append(make_table(["Parameter", "Details"], specs_data_4, [90, 220]))
     
     right_flow = []
-    img4 = "d:/project_impossible/websiteGithub/static/images/obdtodb9_cable_no_bg.png"
+    img4 = "static/images/obdtodb9_cable_no_bg.jpg"
     right_flow.append(make_aspect_image(img4, 180))
     right_flow.append(Spacer(1, 10))
     
@@ -713,9 +725,9 @@ def generate_catalog():
     left_flow.append(Paragraph("<code>pip install dynosure-canviz</code><br/><code>canviz</code>", body_style))
     
     right_flow = []
-    img5 = "d:/project_impossible/websiteGithub/static/images/canviz_screenshot.jpg"
-    right_flow.append(make_aspect_image(img5, 180))
-    right_flow.append(Spacer(1, 10))
+    # img5 = "static/images/canviz_demo_trimmed.gif"
+    # right_flow.append(make_aspect_image(img5, 180))
+    # right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("Information", section_style))
     info_data = [
