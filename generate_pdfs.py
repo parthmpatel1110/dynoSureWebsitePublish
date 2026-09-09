@@ -377,29 +377,32 @@ def generate_logger():
     left_flow = []
     left_flow.append(Paragraph("DynoSure LoggerV1", title_style))
     left_flow.append(Paragraph("<b>Model:</b> LoggerV1 (Standalone CAN Data Logger)", body_style))
-    left_flow.append(Paragraph("The DynoSure LoggerV1 is a standalone CAN bus data logger designed specifically to capture CAN 2.0 traffic to onboard storage without requiring a connected PC during operations. It logs data in the industry-standard Vector ASC file format, avoiding restrictive closed ecosystems and vendor lock-in.", body_style))
+    left_flow.append(Paragraph("The DynoSure LoggerV1 is a standalone CAN bus data logger designed specifically to capture CAN 2.0 traffic to onboard storage without requiring a connected PC during operations. It logs data in industry-standard Vector ASC and MDF4 (.mf4) file formats, avoiding restrictive closed ecosystems and vendor lock-in.", body_style))
     
     left_flow.append(Paragraph("Specifications", section_style))
     specs_data = [
+        ("Microcontroller", "Raspberry Pi RP2350"),
         ("CAN Protocols", "CAN 2.0A (11-bit ID), CAN 2.0B (29-bit extended ID)"),
         ("Storage", "Onboard microSD card (FAT32 filesystem)"),
-        ("Log Format", "Vector ASC (standard ASCII format)"),
+        ("Log Format", "Vector ASC (.asc) & MDF4 (.mf4)"),
         ("USB Interface", "USB 2.0 (Mass Storage Device / Card Reader mode)"),
-        ("Power Modes", "• <b>Logging Mode</b>: Requires <b>+12V DC</b> external supply<br/>• <b>USB Mode</b>: USB-powered (acts as SD card reader)"),
-        ("Firmware Update", "User-programmable at customer end"),
+        ("Power Modes", "• <b>Logging Mode</b>: Requires <b>+12V DC</b> (DB9 Pin 9 & 3)<br/>• <b>USB Mode</b>: USB-powered (acts as SD card reader)"),
+        ("Firmware Update", "Drag-and-drop .uf2 into RP2350 USB drive"),
     ]
     left_flow.append(make_table(["Parameter", "Details"], specs_data, [90, 220]))
     
-    left_flow.append(Paragraph("Baud Rate Configuration", section_style))
-    left_flow.append(Paragraph("Bitrates are selected by creating a simple <code>configuration.txt</code> file in the root of the microSD card. The file should contain one of the following numbers:", body_style))
+    left_flow.append(Paragraph("microSD Configuration (configuration.txt)", section_style))
+    left_flow.append(Paragraph("Create or edit <code>configuration.txt</code> in the root of the microSD card:", body_style))
     
-    bitrate_data = [
-        ("Value", "Bitrate Selected"),
-        ("<b>1</b>", "<b>500 kbps</b> (Standard default)"),
-        ("<b>2</b>", "<b>1 Mbps</b> (High speed CAN)"),
-        ("<b>3</b>", "<b>250 kbps</b> (Medium speed CAN)"),
+    config_data = [
+        ("<b>Bitrate</b>", "<b>1</b> = 500 kbps (default)<br/><b>2</b> = 1 Mbps | <b>3</b> = 250 kbps"),
+        ("<b>FileFormat</b>", "<b>0</b> = Vector ASC (.asc)<br/><b>1</b> = MDF4 (.mf4)"),
+        ("<b>ProgramMode</b>", "<b>0</b> = Normal Logging (default)<br/><b>1</b> = Program Mode (firmware update)"),
     ]
-    left_flow.append(make_table(["Key Value", "Resulting CAN Bus Speed"], bitrate_data[1:], [60, 245]))
+    left_flow.append(make_table(["Key", "Options / Values"], config_data, [80, 230]))
+    
+    left_flow.append(Paragraph("Firmware Update Procedure", section_style))
+    left_flow.append(Paragraph("Set <code>ProgramMode=1</code> in <code>configuration.txt</code> and connect via USB. Device enumerates as an <b>RP2350</b> drive. Copy & paste the <code>.uf2</code> file to flash automatically.", body_style))
     
     right_flow = []
     img_path = "static/images/LOGGGER_no_bg.png"
@@ -422,7 +425,7 @@ def generate_logger():
     right_flow.append(Paragraph("<b>Operation Modes Summary:</b><br/>• <b>Logging Mode</b>: Insert card, connect +12V power supply via Pin 9 and Pin 3 on DB9. Device starts logging automatically.<br/>• <b>USB Mode</b>: Plug into PC via USB cable. Behaves as an external card reader to copy logs.", body_style))
     
     right_flow.append(Spacer(1, 10))
-    right_flow.append(Paragraph("<b>Inquiries & Ordering:</b><br/>Email: <b>dynosure.india@gmail.com</b><br/>Mobile: <b>+91 9898204057 (Mukesh Patel)</b>", body_style))
+    right_flow.append(Paragraph("<b>Inquiries & Technical Support:</b><br/>Support: <b>+91 9422556559</b><br/>Sales: <b>+91 9898204057 (Mukesh Patel)</b><br/>Email: <b>dynosure.india@gmail.com</b>", body_style))
     
     col_table = Table([[left_flow, right_flow]], colWidths=[310, 210])
     col_table.setStyle(TableStyle([
@@ -619,27 +622,27 @@ def generate_catalog():
     left_flow = []
     left_flow.append(Paragraph("DynoSure LoggerV1", title_style))
     left_flow.append(Paragraph("<b>Model:</b> LoggerV1 (Standalone CAN Data Logger)", body_style))
-    left_flow.append(Paragraph("The DynoSure LoggerV1 is a standalone CAN bus data logger designed specifically to capture CAN 2.0 traffic to onboard storage without requiring a connected PC during operations. It logs data in the industry-standard Vector ASC file format, avoiding restrictive closed ecosystems and vendor lock-in.", body_style))
+    left_flow.append(Paragraph("The DynoSure LoggerV1 is a standalone CAN bus data logger designed specifically to capture CAN 2.0 traffic to onboard storage without requiring a connected PC during operations. It logs data in industry-standard Vector ASC and MDF4 (.mf4) file formats, avoiding restrictive closed ecosystems and vendor lock-in.", body_style))
     
     left_flow.append(Paragraph("Specifications", section_style))
     specs_data_3 = [
+        ("Microcontroller", "Raspberry Pi RP2350"),
         ("CAN Protocols", "CAN 2.0A (11-bit ID), CAN 2.0B (29-bit extended ID)"),
         ("Storage", "Onboard microSD card (FAT32 filesystem)"),
-        ("Log Format", "Vector ASC (standard ASCII format)"),
+        ("Log Format", "Vector ASC (.asc) & MDF4 (.mf4)"),
         ("USB Interface", "USB 2.0 (Mass Storage Device / Card Reader mode)"),
         ("Power Modes", "• <b>Logging Mode</b>: Requires <b>+12V DC</b> external supply<br/>• <b>USB Mode</b>: USB-powered (acts as SD card reader)"),
-        ("Firmware Update", "User-programmable at customer end"),
+        ("Firmware Update", "RP2350 drag-and-drop .uf2 file"),
     ]
     left_flow.append(make_table(["Parameter", "Details"], specs_data_3, [90, 215]))
     
-    left_flow.append(Paragraph("Baud Rate Configuration", section_style))
-    bitrate_data = [
-        ("Value", "Bitrate Selected"),
-        ("<b>1</b>", "<b>500 kbps</b> (Standard default)"),
-        ("<b>2</b>", "<b>1 Mbps</b> (High speed CAN)"),
-        ("<b>3</b>", "<b>250 kbps</b> (Medium speed CAN)"),
+    left_flow.append(Paragraph("microSD Configuration (configuration.txt)", section_style))
+    config_data_cat = [
+        ("<b>Bitrate</b>", "<b>1</b> = 500 kbps (default), <b>2</b> = 1 Mbps, <b>3</b> = 250 kbps"),
+        ("<b>FileFormat</b>", "<b>0</b> = Vector ASC (.asc), <b>1</b> = MDF4 (.mf4)"),
+        ("<b>ProgramMode</b>", "<b>0</b> = Logging, <b>1</b> = Program Mode (RP2350 .uf2)"),
     ]
-    left_flow.append(make_table(["Key Value", "Resulting CAN Bus Speed"], bitrate_data[1:], [60, 245]))
+    left_flow.append(make_table(["Key", "Options / Values"], config_data_cat, [80, 225]))
     
     right_flow = []
     img3 = "static/images/LOGGGER_no_bg.png"
