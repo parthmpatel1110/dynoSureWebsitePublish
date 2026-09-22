@@ -439,6 +439,7 @@ def generate_logger():
     
     doc.build(story, onFirstPage=draw_single_page_decorations, onLaterPages=draw_single_page_decorations)
 
+
 # ----------------- 3b. OBD2DB9 Datasheet -----------------
 def generate_obd2db9():
     filename = f"{output_dir}/DynoSure_OBD2DB9_Datasheet.pdf"
@@ -715,7 +716,59 @@ def generate_catalog():
     
     story.append(PageBreak())
     
-    # --- PAGE 6: CANVIZ ---
+    # --- PAGE 6: CAN BRIDGE ---
+    left_flow = []
+    left_flow.append(Paragraph("DynoSure CAN Bridge", title_style))
+    left_flow.append(Paragraph("<b>Model:</b> CAN Bridge (Dual-Channel CAN Bus Bridge & Router)", body_style))
+    left_flow.append(Paragraph("The DynoSure CAN Bridge is an intelligent dual-channel CAN bus bridge and router powered by the Raspberry Pi RP2350 microcontroller. Featuring two independent CAN channels (CAN0 and CAN1) on a single DB9 connector, it enables real-time message forwarding, filtering, ID translation, baud rate conversion, and bus isolation between two separate CAN networks without needing a PC.", body_style))
+    
+    left_flow.append(Paragraph("Specifications", section_style))
+    specs_data_bridge = [
+        ("Microcontroller", "Raspberry Pi RP2350"),
+        ("CAN Interfaces", "2 Independent Channels (CAN0 & CAN1)"),
+        ("CAN Protocols", "CAN 2.0A (11-bit ID), CAN 2.0B (29-bit extended ID)"),
+        ("Bitrates", "Configurable per channel (up to 1 Mbps)"),
+        ("USB Interface", "USB 2.0 (For firmware flashing / UF2 bootloader)"),
+        ("Power Supply", "• <b>Bridge Mode</b>: +12V DC via DB9 (Pin 9: +12V, Pin 3: GND)<br/>• <b>USB Mode</b>: USB-powered (programming)"),
+        ("Firmware Update", "Drag-and-drop .uf2 into RP2350 USB drive"),
+    ]
+    left_flow.append(make_table(["Parameter", "Details"], specs_data_bridge, [90, 215]))
+    
+    left_flow.append(Paragraph("Key Applications", section_style))
+    left_flow.append(Paragraph("• <b>Baud Rate Conversion</b>: Bridge buses operating at different speeds (e.g. 250 kbps to 500 kbps).<br/>• <b>ID Filtering & Routing</b>: Pass or block selected messages between CAN networks.<br/>• <b>Bus Isolation</b>: Protect critical ECU subnets from non-critical or diagnostic traffic.", body_style))
+    
+    right_flow = []
+    img_bridge = "static/images/CanBridge.png"
+    right_flow.append(make_aspect_image(img_bridge, 115))
+    right_flow.append(Spacer(1, 8))
+    
+    right_flow.append(Paragraph("DB9 CAN & Power Pinout", section_style))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
+    right_flow.append(Spacer(1, 4))
+    pinout_bridge = [
+        ("Pin 1", "<b>CAN1-L</b> (Channel 1 Low)"),
+        ("Pin 2", "<b>CAN0-L</b> (Channel 0 Low)"),
+        ("Pin 3", "<b>GND</b> (Power & Signal Ground)"),
+        ("Pin 7", "<b>CAN0-H</b> (Channel 0 High)"),
+        ("Pin 8", "<b>CAN1-H</b> (Channel 1 High)"),
+        ("Pin 9", "<b>+12V DC</b> (Power Input)"),
+        ("Others", "Not Connected"),
+    ]
+    right_flow.append(make_table(["DB9 Pin", "Assignment"], pinout_bridge, [50, 150]))
+    
+    col_table_bridge = Table([[left_flow, right_flow]], colWidths=[310, 210])
+    col_table_bridge.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 0),
+        ('RIGHTPADDING', (0,0), (-1,-1), 0),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ('TOPPADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(col_table_bridge)
+
+    story.append(PageBreak())
+    
+    # --- PAGE 7: CANVIZ ---
     left_flow = []
     left_flow.append(Paragraph("DynoSure CANviz", title_style))
     left_flow.append(Paragraph("<b>Product:</b> Browser-Based CAN Bus Analyzer", body_style))
@@ -728,9 +781,9 @@ def generate_catalog():
     left_flow.append(Paragraph("<code>pip install dynosure-canviz</code><br/><code>canviz</code>", body_style))
     
     right_flow = []
-    # img5 = "static/images/canviz_demo_trimmed.gif"
-    # right_flow.append(make_aspect_image(img5, 180))
-    # right_flow.append(Spacer(1, 10))
+    img5 = "static/images/canviz_screenshot.jpg"
+    right_flow.append(make_aspect_image(img5, 180))
+    right_flow.append(Spacer(1, 10))
     
     right_flow.append(Paragraph("Information", section_style))
     info_data = [
@@ -753,6 +806,74 @@ def generate_catalog():
     
     doc.build(story, onFirstPage=draw_catalog_decorations, onLaterPages=draw_catalog_decorations)
 
+
+# ----------------- 5. CAN Bridge Datasheet -----------------
+def generate_CANBridge():
+    filename = f"{output_dir}/DynoSure_CANBridge_Datasheet.pdf"
+    doc = SimpleDocTemplate(filename, pagesize=A4, leftMargin=36, rightMargin=36, topMargin=60, bottomMargin=45)
+    story = []
+    
+    left_flow = []
+    left_flow.append(Paragraph("DynoSure CAN Bridge", title_style))
+    left_flow.append(Paragraph("<b>Model:</b> CAN Bridge (Dual-Channel CAN Bus Bridge & Router)", body_style))
+    left_flow.append(Paragraph("The DynoSure CAN Bridge is an intelligent dual-channel CAN bus bridge and router powered by the Raspberry Pi RP2350 microcontroller. Featuring two independent CAN channels (CAN0 and CAN1) on a single rugged DB9 connector, it enables real-time message forwarding, filtering, ID translation, baud rate conversion, and bus isolation between two separate CAN networks without needing a PC.", body_style))
+    
+    left_flow.append(Paragraph("Specifications", section_style))
+    specs_data = [
+        ("Microcontroller", "Raspberry Pi RP2350"),
+        ("CAN Interfaces", "2 Independent Channels (CAN0 & CAN1)"),
+        ("CAN Protocols", "CAN 2.0A (11-bit ID), CAN 2.0B (29-bit extended ID)"),
+        ("Bitrates", "Configurable per channel (up to 1 Mbps)"),
+        ("USB Interface", "USB 2.0 (For firmware flashing / UF2 bootloader)"),
+        ("Power Modes", "• <b>Bridge Mode</b>: Requires <b>+12V DC</b> (DB9 Pin 9 & 3)<br/>• <b>USB Mode</b>: USB-powered (firmware programming)"),
+        ("Firmware Update", "Drag-and-drop .uf2 into RP2350 USB drive"),
+    ]
+    left_flow.append(make_table(["Parameter", "Details"], specs_data, [90, 220]))
+    
+    left_flow.append(Paragraph("Key Applications", section_style))
+    left_flow.append(Paragraph("• <b>Baud Rate Conversion</b>: Bridge buses operating at different speeds (e.g. 250 kbps to 500 kbps).<br/>• <b>ID Filtering & Routing</b>: Block or pass select frames between networks to control bus load.<br/>• <b>Network Isolation</b>: Protect critical ECU subnets from non-critical or diagnostic traffic.", body_style))
+
+    left_flow.append(Paragraph("Firmware Update Procedure", section_style))
+    left_flow.append(Paragraph("Connect device to PC via USB cable. Device automatically enumerates as an <b>RP2350</b> mass storage drive. Simply copy and paste the <code>.uf2</code> firmware file to flash automatically.", body_style))
+    
+    right_flow = []
+    img_path = "static/images/CanBridge.png"
+    right_flow.append(make_aspect_image(img_path, 115))
+    right_flow.append(Spacer(1, 8))
+    
+    right_flow.append(Paragraph("DB9 CAN & Power Pinout", section_style))
+    right_flow.append(make_aspect_image("static/images/db9_connector.png", 90))
+    right_flow.append(Spacer(1, 4))
+    pinout_data_3 = [
+        ("Pin 1", "<b>CAN1-L</b> (Channel 1 Low)"),
+        ("Pin 2", "<b>CAN0-L</b> (Channel 0 Low)"),
+        ("Pin 3", "<b>GND</b> (Power Ground)"),
+        ("Pin 7", "<b>CAN0-H</b> (Channel 0 High)"),
+        ("Pin 8", "<b>CAN1-H</b> (Channel 1 High)"),
+        ("Pin 9", "<b>+12V DC</b> (Power Input)"),
+        ("Others", "Not Connected"),
+    ]
+    right_flow.append(make_table(["DB9 Pin", "Assignment"], pinout_data_3, [50, 150]))
+    
+    right_flow.append(Spacer(1, 10))
+    right_flow.append(Paragraph("<b>Operation Modes Summary:</b><br/>• <b>Bridge Mode</b>: Connect +12V DC power supply via DB9. Device starts acting as CAN bridge immediately.<br/>• <b>USB Mode</b>: Plug into PC via USB cable to program/flash firmware.", body_style))
+    
+    right_flow.append(Spacer(1, 8))
+    right_flow.append(Paragraph("<b>Inquiries & Technical Support:</b><br/>Support: <b>+91 9422556559</b><br/>Sales: <b>+91 9898204057 (Mukesh Patel)</b><br/>Email: <b>dynosure.india@gmail.com</b>", body_style))
+    
+    col_table = Table([[left_flow, right_flow]], colWidths=[310, 210])
+    col_table.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 0),
+        ('RIGHTPADDING', (0,0), (-1,-1), 0),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ('TOPPADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(col_table)
+    
+    doc.build(story, onFirstPage=draw_single_page_decorations, onLaterPages=draw_single_page_decorations)
+
+
 if __name__ == '__main__':
     print("Generating SLCANv1 Datasheet...")
     generate_slcanv1()
@@ -762,6 +883,8 @@ if __name__ == '__main__':
     generate_logger()
     print("Generating OBD2DB9 Datasheet...")
     generate_obd2db9()
+    print("Generating CAN Bridge Datasheet...")
+    generate_CANBridge()
     print("Generating Product Catalog...")
     generate_catalog()
     print("All PDFs generated successfully!")
