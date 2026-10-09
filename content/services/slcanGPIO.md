@@ -74,6 +74,13 @@ To set GPIO 0, GPIO 2, and GPIO 4 HIGH (and all others LOW):
 | 📖 How to Add DLL in Your Project | [⬇️ Guide](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) |
 | 🐍 Python Library (PyPI) | [`pip install dynosure-slcanv1`](https://pypi.org/project/dynosure-slcanv1/) |
 | 📖 Python Library Documentation | [⬇️ Download](./../../files/slcanv1_documentation.pdf) |
+| 🛠️ VC++ Redistributable (x86 / 32-bit) | [⬇️ Download](./../../files/VC_redist.x86.exe) |
+| 🛠️ VC++ Redistributable (x64 / 64-bit) | [⬇️ Download](./../../files/VC_redist.x64.exe) |
+
+> 💡 **Troubleshooting Connection / DLL Issues:**  
+> If you encounter issues connecting or loading the DLL:
+> - **BUSMASTER (32-bit):** Install the [Visual C++ Redistributable (x86)](./../../files/VC_redist.x86.exe).
+> - **Python (64-bit) / Custom Applications:** Install the [Visual C++ Redistributable (x64)](./../../files/VC_redist.x64.exe).
 
 ---
 

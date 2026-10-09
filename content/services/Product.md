@@ -13,6 +13,11 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 
 ![DynoSure SLCANv1](/images/Slcanv1_no_bg.png)
 
+<div style="margin: 20px 0; display: flex; gap: 12px; flex-wrap: wrap;">
+  <a href="https://robu.in/product/dynosure-slcanv1-usb-to-can-converter/" class="button button-primary" target="_blank" rel="noopener noreferrer">🛒 Buy on Robu.in</a>
+  <a href="https://www.amazon.in/DynoSure-Slcanv1-Converter-Adapter-Busmaster/dp/B0G1ZNN2X7" class="button button-primary" target="_blank" rel="noopener noreferrer">🛒 Buy on Amazon.in</a>
+</div>
+
 ---
 
 # Specifications
@@ -48,6 +53,13 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 | 📖 How to Add DLL in Your Project | [⬇️ Guide](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) |
 | 🐍 Python Library (PyPI) | [`pip install dynosure-slcanv1`](https://pypi.org/project/dynosure-slcanv1/) |
 | 📖 Python Library Documentation | [⬇️ Download](./../../files/slcanv1_documentation.pdf) |
+| 🛠️ VC++ Redistributable (x86 / 32-bit) | [⬇️ Download](./../../files/VC_redist.x86.exe) |
+| 🛠️ VC++ Redistributable (x64 / 64-bit) | [⬇️ Download](./../../files/VC_redist.x64.exe) |
+
+> 💡 **Troubleshooting Connection / DLL Issues:**  
+> If you encounter issues connecting or loading the DLL:
+> - **BUSMASTER (32-bit):** Install the [Visual C++ Redistributable (x86)](./../../files/VC_redist.x86.exe).
+> - **Python (64-bit) / Custom Applications:** Install the [Visual C++ Redistributable (x64)](./../../files/VC_redist.x64.exe).
 
 ---
 
@@ -62,9 +74,19 @@ The DynoSure SLCANv1 is a compact, high-performance USB-to-CAN adapter built for
 
 ---
 
-# Order Online at
-### Robu.in : https://robu.in/product/dynosure-slcanv1-usb-to-can-converter/
-### Amazon.in : https://www.amazon.in/DynoSure-Slcanv1-Converter-Adapter-Busmaster/dp/B0G1ZNN2X7
+# 🛒 Buy Online
+
+Order the DynoSure SLCANv1 directly from our authorized online partners:
+
+<div style="margin: 20px 0; display: flex; gap: 12px; flex-wrap: wrap;">
+  <a href="https://robu.in/product/dynosure-slcanv1-usb-to-can-converter/" class="button button-primary" target="_blank" rel="noopener noreferrer">🛒 Buy on Robu.in</a>
+  <a href="https://www.amazon.in/DynoSure-Slcanv1-Converter-Adapter-Busmaster/dp/B0G1ZNN2X7" class="button button-primary" target="_blank" rel="noopener noreferrer">🛒 Buy on Amazon.in</a>
+</div>
+
+- **Robu.in:** [DynoSure SLCANv1 USB to CAN Converter](https://robu.in/product/dynosure-slcanv1-usb-to-can-converter/)
+- **Amazon.in:** [DynoSure SLCANv1 USB to CAN Tool](https://www.amazon.in/DynoSure-Slcanv1-Converter-Adapter-Busmaster/dp/B0G1ZNN2X7)
+
+---
 
 ### **Want to know more ?** contact us at 
 - **+91 9898204057 (Mukesh Patel)**.

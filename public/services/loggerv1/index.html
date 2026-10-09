@@ -1,5 +1,416 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger - DynoSure</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon type=image/png href=/images/logo/dynoSure_32x32.svg><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Source+Sans+Pro:wght@400;700&amp;display=swap" rel=stylesheet><link rel=stylesheet href=/css/style.min.e216382aed008745996180cea776f895b003cbf69fcc1145fa8be5a8711b7739.css><meta property="og:title" content="DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger"><meta property="og:type" content="website"><meta property="og:url" content="https://www.dynosure.co.in/services/loggerv1/"><meta property="og:image" content="https://www.dynosure.co.in/images/LOGGGER_no_bg.png"><meta name=twitter:card content="summary"><meta name=twitter:site content="@dynosure"><meta name=twitter:creator content="@dynosure"></head><body class='page page-services-single'><div id=main-menu-mobile class=main-menu-mobile><ul><li class=menu-item-products><a href=/services/><span>Products</span></a></li><li class=menu-item-downloads><a href=/downloads/><span>Downloads</span></a></li><li class=menu-item-contact><a href=/contact/><span>Contact</span></a></li></ul></div><div class=wrapper><div class=header><div class=container><div class=logo><a href=/><img height=150px alt="DynoSure - CAN Bus Tools" src=/images/logo/dynoSure.svg></a></div><div class=logo-mobile><a href=/><img height=70px alt="DynoSure - CAN Bus Tools" src=/images/logo/dynoSure.svg></a></div><div id=main-menu class=main-menu><ul><li class=menu-item-products><a href=/services/><span>Products</span></a></li><li class=menu-item-downloads><a href=/downloads/><span>Downloads</span></a></li><li class=menu-item-contact><a href=/contact/><span>Contact</span></a></li></ul></div><button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button aria-label="Mobile Menu">
-<span class=hamburger-box><span class=hamburger-inner></span></span></button></div></div><div class="container pb-6 pt-6 pt-md-10 pb-md-10"><div class="row justify-content-center"><div class="col-12 col-md-10"><div class="service service-single"><h1 class=title>DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger</h1><div class=content><p>The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in standard <strong>Vector ASC and MDF4 (.mf4) file formats</strong> - no proprietary software, no vendor lock-in.</p><p><img src=/images/LOGGGER_no_bg.png alt="DynoSure LoggerV1"></p><hr><h1 id=-why-did-we-build-the-dynosure-loggerv1>💡 Why Did We Build the DynoSure LoggerV1?</h1><p>While commercial CAN logging tools are available, many are prohibitively expensive for the Indian automotive sector or trap users in restrictive, closed ecosystems. We wanted to change that by building something <strong>accessible</strong> and <strong>open</strong>.</p><hr><h1 id=key-advantages>Key Advantages</h1><table><thead><tr><th>Feature</th><th>Benefit</th></tr></thead><tbody><tr><td><strong>Open Standards</strong></td><td>Logs in Vector ASC and MDF4 (.mf4) formats - compatible with standard CAN analysis and measurement tools</td></tr><tr><td><strong>Standalone Operation</strong></td><td>No PC required during logging - connect, power on, and capture</td></tr><tr><td><strong>Future-Proof</strong></td><td>User-end firmware updates for continuous improvements</td></tr><tr><td><strong>Cost-Effective</strong></td><td>Premium performance at a price point suited for the Indian market</td></tr></tbody></table><hr><h1 id=specifications>Specifications</h1><table><thead><tr><th>Parameter</th><th>Details</th></tr></thead><tbody><tr><td><strong>Supported CAN Protocols</strong></td><td>CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID)</td></tr><tr><td><strong>Microcontroller</strong></td><td>Raspberry Pi RP2350</td></tr><tr><td><strong>USB Interface</strong></td><td>USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0)</td></tr><tr><td><strong>Configuration (<code>configuration.txt</code>)</strong></td><td>Configured via simple key-value parameters on microSD card root:<br>• <code>Bitrate=1</code> (500 kbps default), <code>2</code> (1 Mbps), <code>3</code> (250 kbps)<br>• <code>FileFormat=0</code> (Vector ASC), <code>1</code> (MDF4 / .mf4)<br>• <code>ProgramMode=0</code> (Normal logging), <code>1</code> (Firmware Update)</td></tr><tr><td><strong>Data Storage</strong></td><td>Onboard microSD card for offline CAN data capture</td></tr><tr><td><strong>Log Format</strong></td><td>Vector ASC (<code>.asc</code>) & MDF4 (<code>.mf4</code>) (industry-standard)</td></tr><tr><td><strong>Logging Features</strong></td><td>Timestamped messages, configurable ID filters</td></tr><tr><td><strong>Power Supply & Operating Modes</strong></td><td>• <strong>Logging Mode</strong>: Requires <strong>+12V DC</strong> external power supply via DB9 connector (<strong>Pin 9: +12V</strong>, <strong>Pin 3: GND</strong>)<br>• <strong>USB Mode</strong>: USB powered - acts as a standard <strong>microSD Card Reader</strong> to copy logs to PC</td></tr><tr><td><strong>Firmware Update</strong></td><td>Drag-and-drop <code>.uf2</code> file into <strong>RP2350</strong> drive (set <code>ProgramMode=1</code> in <code>configuration.txt</code>)</td></tr><tr><td><strong>Operating Temperature</strong></td><td>Extended range - suitable for industrial & automotive environments</td></tr></tbody></table><blockquote><p><strong>Note:</strong> The LoggerV1 supports CAN 2.0A and CAN 2.0B protocols. CAN-FD is not supported on this product. For CAN-FD requirements, see our <a href=/services/product/>SLCANv1</a> or <a href=/services/slcangpio/>SLCAN GPIO</a> adapters.</p></blockquote><hr><h1 id=-configuration--firmware-update>⚙️ Configuration & Firmware Update</h1><p>The DynoSure LoggerV1 is configured by creating or editing a <code>configuration.txt</code> file located in the root directory of the microSD card.</p><h3 id=example-configurationtxt>Example <code>configuration.txt</code></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-ini data-lang=ini><span style=display:flex><span><span style=color:#a6e22e>Bitrate</span><span style=color:#f92672>=</span><span style=color:#e6db74>1</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>FileFormat</span><span style=color:#f92672>=</span><span style=color:#e6db74>1</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>ProgramMode</span><span style=color:#f92672>=</span><span style=color:#e6db74>0</span>
-</span></span></code></pre></div><h3 id=parameter-reference>Parameter Reference</h3><table><thead><tr><th>Parameter</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><strong>Bitrate</strong></td><td><code>1</code></td><td><strong>500 kbps</strong> (Standard default bitrate)</td></tr><tr><td></td><td><code>2</code></td><td><strong>1 Mbps</strong> (High speed CAN bus)</td></tr><tr><td></td><td><code>3</code></td><td><strong>250 kbps</strong> (Medium speed CAN bus)</td></tr><tr><td><strong>FileFormat</strong></td><td><code>0</code></td><td><strong>Vector ASC (<code>.asc</code>)</strong> industry-standard text format</td></tr><tr><td></td><td><code>1</code></td><td><strong>MDF4 (<code>.mf4</code>)</strong> ASAM MDF standard binary format</td></tr><tr><td><strong>ProgramMode</strong></td><td><code>0</code></td><td><strong>Normal Logging Mode</strong> (default operation)</td></tr><tr><td></td><td><code>1</code></td><td><strong>Firmware Programming Mode</strong></td></tr></tbody></table><h3 id=how-to-update-firmware>How to Update Firmware</h3><ol><li>Open <code>configuration.txt</code> on the microSD card and set <code>ProgramMode=1</code>.</li><li>Connect the LoggerV1 to your PC via USB cable.</li><li>The device enters program mode and mounts on your computer as an <strong>RP2350</strong> USB mass storage drive.</li><li>Copy and paste (or drag-and-drop) the new <code>.uf2</code> firmware file into the <strong>RP2350</strong> drive.</li><li>Once written, the device flashes the firmware automatically and restarts. Change <code>ProgramMode=0</code> in <code>configuration.txt</code> to return to regular logging.</li></ol><hr><h1 id=downloads>Downloads</h1><table><thead><tr><th>Resource</th><th>Link</th></tr></thead><tbody><tr><td>📄 Product Datasheet</td><td><a href=./../../files/DynoSure_Logger_Datasheet.pdf>⬇️ Download</a></td></tr><tr><td>🐍 Log to Vector ASC Converter</td><td><a href=./../../files/log2Asc.py>⬇️ Download</a></td></tr><tr><td>⚙️ ASC to Excel Converter</td><td><a href=./../../files/python_code_for_asc_excel.zip>⬇️ Download</a></td></tr></tbody></table><hr><h1 id=trusted-by>Trusted By</h1><ul><li>Bgauss Pvt Ltd.</li><li>RTCON Engineering</li><li>Jindal Mobilitric Pvt Ltd.</li><li>MATEL Motion and Energy Solutions Pvt Ltd.</li><li>TRONTEK ELECTRONICS LIMITED</li><li>Lord&rsquo;s Automative Private Limited</li></ul><hr><p>We are committed to providing affordable, open, and powerful diagnostic tools to keep you moving forward.</p><h3 id=-need-support-or-ready-to-order>📞 <strong>Need Support or Ready to Order?</strong></h3><ul><li><strong>Technical Support:</strong> <strong>+91 9422556559</strong></li><li><strong>Sales & Inquiries:</strong> <strong>+91 9898204057 (Mukesh Patel)</strong></li><li><strong>Email:</strong> <strong><a href=mailto:dynosure.india@gmail.com>dynosure.india@gmail.com</a></strong></li></ul></div></div></div></div></div></div><div class=footer><div class=container><div class=row><div class="col-12 col-md-4"><h3 class=footer-title>DynoSure</h3><div class=footer-contact><p>Affordable automotive diagnostic tools - engineered in India.</p></div></div><div class="col-12 col-md-4"><h3 class=footer-title>Contact</h3><div class=footer-contact><p>✉️ <a href=mailto:dynosure.india@gmail.com>dynosure.india@gmail.com</a></p><p>📱 +91 9898204057 (Mukesh Patel)</p><p>📱 +91 9422556559</p></div></div><div class="col-12 col-md-4"><h3 class=footer-title>Links</h3><div id=footer-menu class=footer-menu><ul><li class=menu-item-home><a href=/><span>Home</span></a></li><li class=menu-item-contact><a href=/contact/><span>Contact</span></a></li></ul></div></div></div></div></div><div class=sub-footer><div class=container><div class=row><div class=col-12><div class=sub-footer-inner><div class=copyright>© 2026 Maruti Electrical & Electronics. All rights reserved.</div></div></div></div></div></div><script type=text/javascript src=/js/services.min.9107b65a7df0422d8a274963e6b560062a6cdf62185570cfd584b43defa67279.js></script><script type=text/javascript src=/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger - DynoSure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/images/logo/dynoSure_32x32.svg">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+    
+    <meta property="og:title" content="DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://localhost:1313/services/loggerv1/"/>
+    <meta property="og:image" content="http://localhost:1313/images/LOGGGER_no_bg.png"/>
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@dynosure"/>
+    <meta name="twitter:creator" content="@dynosure"/>
+  
+
+</head>
+
+<body class='page page-services-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-products ">
+      <a href="/services/">
+        <span>Products</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-downloads ">
+      <a href="/downloads/">
+        <span>Downloads</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height=150px alt="DynoSure - CAN Bus Tools" src="/images/logo/dynoSure.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img height=70px alt="DynoSure - CAN Bus Tools" src="/images/logo/dynoSure.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-products ">
+      <a href="/services/">
+        
+        <span>Products</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-downloads ">
+      <a href="/downloads/">
+        
+        <span>Downloads</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <div class="service service-single">
+        <h1 class="title">DynoSure LoggerV1 - Standalone CAN 2.0B Data Logger</h1>
+        <div class="content"><p>The DynoSure LoggerV1 is a standalone CAN bus data logger designed for the Indian automotive industry. It captures CAN 2.0 traffic to onboard storage in standard <strong>Vector ASC and MDF4 (.mf4) file formats</strong> - no proprietary software, no vendor lock-in.</p>
+<p><img src="/images/LOGGGER_no_bg.png" alt="DynoSure LoggerV1"></p>
+<hr>
+<h1 id="-why-did-we-build-the-dynosure-loggerv1">💡 Why Did We Build the DynoSure LoggerV1?</h1>
+<p>While commercial CAN logging tools are available, many are prohibitively expensive for the Indian automotive sector or trap users in restrictive, closed ecosystems. We wanted to change that by building something <strong>accessible</strong> and <strong>open</strong>.</p>
+<hr>
+<h1 id="key-advantages">Key Advantages</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Feature</th>
+					<th>Benefit</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Open Standards</strong></td>
+					<td>Logs in Vector ASC and MDF4 (.mf4) formats - compatible with standard CAN analysis and measurement tools</td>
+			</tr>
+			<tr>
+					<td><strong>Standalone Operation</strong></td>
+					<td>No PC required during logging - connect, power on, and capture</td>
+			</tr>
+			<tr>
+					<td><strong>Future-Proof</strong></td>
+					<td>User-end firmware updates for continuous improvements</td>
+			</tr>
+			<tr>
+					<td><strong>Cost-Effective</strong></td>
+					<td>Premium performance at a price point suited for the Indian market</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="specifications">Specifications</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter</th>
+					<th>Details</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Supported CAN Protocols</strong></td>
+					<td>CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID)</td>
+			</tr>
+			<tr>
+					<td><strong>Microcontroller</strong></td>
+					<td>Raspberry Pi RP2350</td>
+			</tr>
+			<tr>
+					<td><strong>USB Interface</strong></td>
+					<td>USB 2.0 Full-Speed (backward compatible with USB 1.1, forward compatible with USB 3.0)</td>
+			</tr>
+			<tr>
+					<td><strong>Configuration (<code>configuration.txt</code>)</strong></td>
+					<td>Configured via simple key-value parameters on microSD card root:<br>• <code>Bitrate=1</code> (500 kbps default), <code>2</code> (1 Mbps), <code>3</code> (250 kbps)<br>• <code>FileFormat=0</code> (Vector ASC), <code>1</code> (MDF4 / .mf4)<br>• <code>ProgramMode=0</code> (Normal logging), <code>1</code> (Firmware Update)</td>
+			</tr>
+			<tr>
+					<td><strong>Data Storage</strong></td>
+					<td>Onboard microSD card for offline CAN data capture</td>
+			</tr>
+			<tr>
+					<td><strong>Log Format</strong></td>
+					<td>Vector ASC (<code>.asc</code>) &amp; MDF4 (<code>.mf4</code>) (industry-standard)</td>
+			</tr>
+			<tr>
+					<td><strong>Logging Features</strong></td>
+					<td>Timestamped messages, configurable ID filters</td>
+			</tr>
+			<tr>
+					<td><strong>Power Supply &amp; Operating Modes</strong></td>
+					<td>• <strong>Logging Mode</strong>: Requires <strong>+12V DC</strong> external power supply via DB9 connector (<strong>Pin 9: +12V</strong>, <strong>Pin 3: GND</strong>)<br>• <strong>USB Mode</strong>: USB powered - acts as a standard <strong>microSD Card Reader</strong> to copy logs to PC</td>
+			</tr>
+			<tr>
+					<td><strong>Firmware Update</strong></td>
+					<td>Drag-and-drop <code>.uf2</code> file into <strong>RP2350</strong> drive (set <code>ProgramMode=1</code> in <code>configuration.txt</code>)</td>
+			</tr>
+			<tr>
+					<td><strong>Operating Temperature</strong></td>
+					<td>Extended range - suitable for industrial &amp; automotive environments</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> The LoggerV1 supports CAN 2.0A and CAN 2.0B protocols. CAN-FD is not supported on this product. For CAN-FD requirements, see our <a href="/services/product/">SLCANv1</a> or <a href="/services/slcangpio/">SLCAN GPIO</a> adapters.</p>
+</blockquote>
+<hr>
+<h1 id="-configuration--firmware-update">⚙️ Configuration &amp; Firmware Update</h1>
+<p>The DynoSure LoggerV1 is configured by creating or editing a <code>configuration.txt</code> file located in the root directory of the microSD card.</p>
+<h3 id="example-configurationtxt">Example <code>configuration.txt</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">Bitrate</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">FileFormat</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ProgramMode</span><span style="color:#f92672">=</span><span style="color:#e6db74">0</span>
+</span></span></code></pre></div><h3 id="parameter-reference">Parameter Reference</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter</th>
+					<th>Value</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Bitrate</strong></td>
+					<td><code>1</code></td>
+					<td><strong>500 kbps</strong> (Standard default bitrate)</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td><code>2</code></td>
+					<td><strong>1 Mbps</strong> (High speed CAN bus)</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td><code>3</code></td>
+					<td><strong>250 kbps</strong> (Medium speed CAN bus)</td>
+			</tr>
+			<tr>
+					<td><strong>FileFormat</strong></td>
+					<td><code>0</code></td>
+					<td><strong>Vector ASC (<code>.asc</code>)</strong> industry-standard text format</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td><code>1</code></td>
+					<td><strong>MDF4 (<code>.mf4</code>)</strong> ASAM MDF standard binary format</td>
+			</tr>
+			<tr>
+					<td><strong>ProgramMode</strong></td>
+					<td><code>0</code></td>
+					<td><strong>Normal Logging Mode</strong> (default operation)</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td><code>1</code></td>
+					<td><strong>Firmware Programming Mode</strong></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="how-to-update-firmware">How to Update Firmware</h3>
+<ol>
+<li>Open <code>configuration.txt</code> on the microSD card and set <code>ProgramMode=1</code>.</li>
+<li>Connect the LoggerV1 to your PC via USB cable.</li>
+<li>The device enters program mode and mounts on your computer as an <strong>RP2350</strong> USB mass storage drive.</li>
+<li>Copy and paste (or drag-and-drop) the new <code>.uf2</code> firmware file into the <strong>RP2350</strong> drive.</li>
+<li>Once written, the device flashes the firmware automatically and restarts. Change <code>ProgramMode=0</code> in <code>configuration.txt</code> to return to regular logging.</li>
+</ol>
+<hr>
+<h1 id="downloads">Downloads</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Resource</th>
+					<th>Link</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>📄 Product Datasheet</td>
+					<td><a href="./../../files/DynoSure_Logger_Datasheet.pdf">⬇️ Download</a></td>
+			</tr>
+			<tr>
+					<td>🐍 Log to Vector ASC Converter</td>
+					<td><a href="./../../files/log2Asc.py">⬇️ Download</a></td>
+			</tr>
+			<tr>
+					<td>⚙️ ASC to Excel Converter</td>
+					<td><a href="./../../files/python_code_for_asc_excel.zip">⬇️ Download</a></td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="trusted-by">Trusted By</h1>
+<ul>
+<li>Bgauss Pvt Ltd.</li>
+<li>RTCON Engineering</li>
+<li>Jindal Mobilitric Pvt Ltd.</li>
+<li>MATEL Motion and Energy Solutions Pvt Ltd.</li>
+<li>TRONTEK ELECTRONICS LIMITED</li>
+<li>Lord&rsquo;s Automative Private Limited</li>
+</ul>
+<hr>
+<p>We are committed to providing affordable, open, and powerful diagnostic tools to keep you moving forward.</p>
+<h3 id="-need-support-or-ready-to-order">📞 <strong>Need Support or Ready to Order?</strong></h3>
+<ul>
+<li><strong>Technical Support:</strong> <strong>+91 9422556559</strong></li>
+<li><strong>Sales &amp; Inquiries:</strong> <strong>+91 9898204057 (Mukesh Patel)</strong></li>
+<li><strong>Email:</strong> <strong><a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></strong></li>
+</ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">DynoSure</h3>
+        <div class="footer-contact">
+          <p>Affordable automotive diagnostic tools - engineered in India.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-contact">
+          
+          <p>✉️ <a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></p>
+          
+          
+          <p>📱 &#43;91 9898204057 (Mukesh Patel)</p>
+          
+          
+          <p>📱 &#43;91 9422556559</p>
+          
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Links</h3>
+        <div id="footer-menu" class="footer-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-home ">
+      <a href="/">
+        
+        <span>Home</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+          
+            <div class="copyright">© 2026 Maruti Electrical & Electronics. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+
+
+
+
+<script type="text/javascript" src="/js/services.js"></script>
+
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+
+  
+
+  
+
+</body>
+
+</html>

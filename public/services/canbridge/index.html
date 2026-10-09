@@ -1,2 +1,394 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>DynoSure CAN Bridge - Dual-Channel CAN Bus Bridge & Router - DynoSure</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon type=image/png href=/images/logo/dynoSure_32x32.svg><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Source+Sans+Pro:wght@400;700&amp;display=swap" rel=stylesheet><link rel=stylesheet href=/css/style.min.e216382aed008745996180cea776f895b003cbf69fcc1145fa8be5a8711b7739.css><meta property="og:title" content="DynoSure CAN Bridge - Dual-Channel CAN Bus Bridge & Router"><meta property="og:type" content="website"><meta property="og:url" content="https://www.dynosure.co.in/services/canbridge/"><meta property="og:image" content="https://www.dynosure.co.in/images/CanBridge.png"><meta name=twitter:card content="summary"><meta name=twitter:site content="@dynosure"><meta name=twitter:creator content="@dynosure"></head><body class='page page-services-single'><div id=main-menu-mobile class=main-menu-mobile><ul><li class=menu-item-products><a href=/services/><span>Products</span></a></li><li class=menu-item-downloads><a href=/downloads/><span>Downloads</span></a></li><li class=menu-item-contact><a href=/contact/><span>Contact</span></a></li></ul></div><div class=wrapper><div class=header><div class=container><div class=logo><a href=/><img height=150px alt="DynoSure - CAN Bus Tools" src=/images/logo/dynoSure.svg></a></div><div class=logo-mobile><a href=/><img height=70px alt="DynoSure - CAN Bus Tools" src=/images/logo/dynoSure.svg></a></div><div id=main-menu class=main-menu><ul><li class=menu-item-products><a href=/services/><span>Products</span></a></li><li class=menu-item-downloads><a href=/downloads/><span>Downloads</span></a></li><li class=menu-item-contact><a href=/contact/><span>Contact</span></a></li></ul></div><button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button aria-label="Mobile Menu">
-<span class=hamburger-box><span class=hamburger-inner></span></span></button></div></div><div class="container pb-6 pt-6 pt-md-10 pb-md-10"><div class="row justify-content-center"><div class="col-12 col-md-10"><div class="service service-single"><h1 class=title>DynoSure CAN Bridge - Dual-Channel CAN Bus Bridge & Router</h1><div class=content><p>The DynoSure CAN Bridge is an intelligent dual-channel CAN bus bridge and router powered by the Raspberry Pi RP2350 microcontroller. Featuring two independent CAN channels (CAN0 and CAN1) on a single rugged DB9 connector, it enables real-time message forwarding, filtering, ID translation, baud rate conversion, and bus isolation between two separate CAN networks without needing a PC.</p><p><img src=/images/CanBridge.png alt="DynoSure CAN Bridge"></p><hr><h1 id=-why-did-we-build-the-dynosure-can-bridge>💡 Why Did We Build the DynoSure CAN Bridge?</h1><p>In automotive and industrial systems, different electronic control units (ECUs) and subsystems frequently operate across isolated CAN networks or at differing bitrates (such as a 250 kbps vehicle powertrain bus and a 500 kbps telemetry network). Bridging, monitoring, or testing these networks typically requires expensive gateway hardware or complicated multi-adapter PC setups.</p><p>The <strong>DynoSure CAN Bridge</strong> solves this challenge by providing a compact, standalone bridge that connects two physical CAN buses directly. It handles real-time message forwarding, baud rate conversion, and message filtering completely autonomously.</p><hr><h1 id=key-applications>Key Applications</h1><table><thead><tr><th>Application</th><th>Description</th></tr></thead><tbody><tr><td><strong>Baud Rate Conversion</strong></td><td>Seamlessly bridge buses operating at different bitrates (e.g., 250 kbps to 500 kbps).</td></tr><tr><td><strong>ID Filtering & Routing</strong></td><td>Selectively block or pass specific CAN IDs between networks to manage bus load.</td></tr><tr><td><strong>Bus & Subnet Isolation</strong></td><td>Protect critical ECU subnets from non-critical, high-load, or diagnostic traffic.</td></tr><tr><td><strong>Message Translation</strong></td><td>Forward, re-map, or filter message frames in real time between channels.</td></tr></tbody></table><hr><h1 id=specifications>Specifications</h1><table><thead><tr><th>Parameter</th><th>Details</th></tr></thead><tbody><tr><td><strong>Microcontroller</strong></td><td>Raspberry Pi RP2350</td></tr><tr><td><strong>CAN Interfaces</strong></td><td>2 Independent Channels (CAN0 & CAN1)</td></tr><tr><td><strong>Supported CAN Protocols</strong></td><td>CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID)</td></tr><tr><td><strong>Bitrates</strong></td><td>Configurable per channel (up to 1 Mbps)</td></tr><tr><td><strong>USB Interface</strong></td><td>USB 2.0 (for firmware flashing / UF2 bootloader)</td></tr><tr><td><strong>Power Supply & Operating Modes</strong></td><td>• <strong>Bridge Mode</strong>: Requires <strong>+12V DC</strong> external power supply via DB9 connector (<strong>Pin 9: +12V</strong>, <strong>Pin 3: GND</strong>)<br>• <strong>USB Mode</strong>: USB powered - acts as an <strong>RP2350 USB mass storage drive</strong> for firmware flashing</td></tr><tr><td><strong>Firmware Update</strong></td><td>Drag-and-drop <code>.uf2</code> file into <strong>RP2350</strong> drive</td></tr><tr><td><strong>Operating Temperature</strong></td><td>Extended range - suitable for industrial & automotive environments</td></tr></tbody></table><hr><h1 id=-db9-pinout-mapping>🔌 DB9 Pinout Mapping</h1><p>Both independent CAN channels and power supply are integrated into a single standard DB9 connector:</p><p><img src=/images/db9_connector.png alt="DB9 Connector Pinout"></p><table><thead><tr><th>DB9 Pin</th><th>Assignment</th><th>Description</th></tr></thead><tbody><tr><td><strong>Pin 1</strong></td><td><strong>CAN1-L</strong></td><td>Channel 1 CAN Low</td></tr><tr><td><strong>Pin 2</strong></td><td><strong>CAN0-L</strong></td><td>Channel 0 CAN Low</td></tr><tr><td><strong>Pin 3</strong></td><td><strong>GND</strong></td><td>Power & Signal Ground</td></tr><tr><td><strong>Pin 7</strong></td><td><strong>CAN0-H</strong></td><td>Channel 0 CAN High</td></tr><tr><td><strong>Pin 8</strong></td><td><strong>CAN1-H</strong></td><td>Channel 1 CAN High</td></tr><tr><td><strong>Pin 9</strong></td><td><strong>+12V DC</strong></td><td>External Power Input (Bridge Mode)</td></tr><tr><td><strong>Others</strong></td><td>Not Connected</td><td>Reserved</td></tr></tbody></table><hr><h1 id=-firmware-update-procedure>⚙️ Firmware Update Procedure</h1><p>The DynoSure CAN Bridge utilizes the Raspberry Pi UF2 bootloader for effortless firmware updates:</p><ol><li>Connect the CAN Bridge to your PC using a standard USB cable.</li><li>The device automatically enumerates as an <strong>RP2350</strong> mass storage drive.</li><li>Drag and drop (or copy) the <code>.uf2</code> firmware file into the drive.</li><li>The device flashes the firmware automatically and restarts ready for operation.</li></ol><hr><h1 id=downloads>Downloads</h1><table><thead><tr><th>Resource</th><th>Link</th></tr></thead><tbody><tr><td>📄 Product Datasheet</td><td><a href=./../../files/DynoSure_CANBridge_Datasheet.pdf>⬇️ Download</a></td></tr></tbody></table><hr><h1 id=trusted-by>Trusted By</h1><ul><li>Bgauss Pvt Ltd.</li><li>RTCON Engineering</li><li>Jindal Mobilitric Pvt Ltd.</li><li>MATEL Motion and Energy Solutions Pvt Ltd.</li><li>TRONTEK ELECTRONICS LIMITED</li><li>Lord&rsquo;s Automative Private Limited</li></ul><hr><h3 id=-need-support-or-ready-to-order>📞 <strong>Need Support or Ready to Order?</strong></h3><ul><li><strong>Technical Support:</strong> <strong>+91 9422556559</strong></li><li><strong>Sales & Inquiries:</strong> <strong>+91 9898204057 (Mukesh Patel)</strong></li><li><strong>Email:</strong> <strong><a href=mailto:dynosure.india@gmail.com>dynosure.india@gmail.com</a></strong></li></ul></div></div></div></div></div></div><div class=footer><div class=container><div class=row><div class="col-12 col-md-4"><h3 class=footer-title>DynoSure</h3><div class=footer-contact><p>Affordable automotive diagnostic tools - engineered in India.</p></div></div><div class="col-12 col-md-4"><h3 class=footer-title>Contact</h3><div class=footer-contact><p>✉️ <a href=mailto:dynosure.india@gmail.com>dynosure.india@gmail.com</a></p><p>📱 +91 9898204057 (Mukesh Patel)</p><p>📱 +91 9422556559</p></div></div><div class="col-12 col-md-4"><h3 class=footer-title>Links</h3><div id=footer-menu class=footer-menu><ul><li class=menu-item-home><a href=/><span>Home</span></a></li><li class=menu-item-contact><a href=/contact/><span>Contact</span></a></li></ul></div></div></div></div></div><div class=sub-footer><div class=container><div class=row><div class=col-12><div class=sub-footer-inner><div class=copyright>© 2026 Maruti Electrical & Electronics. All rights reserved.</div></div></div></div></div></div><script type=text/javascript src=/js/services.min.9107b65a7df0422d8a274963e6b560062a6cdf62185570cfd584b43defa67279.js></script><script type=text/javascript src=/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DynoSure CAN Bridge - Dual-Channel CAN Bus Bridge &amp; Router - DynoSure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/images/logo/dynoSure_32x32.svg">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+    
+    <meta property="og:title" content="DynoSure CAN Bridge - Dual-Channel CAN Bus Bridge &amp; Router"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://localhost:1313/services/canbridge/"/>
+    <meta property="og:image" content="http://localhost:1313/images/CanBridge.png"/>
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@dynosure"/>
+    <meta name="twitter:creator" content="@dynosure"/>
+  
+
+</head>
+
+<body class='page page-services-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-products ">
+      <a href="/services/">
+        <span>Products</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-downloads ">
+      <a href="/downloads/">
+        <span>Downloads</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height=150px alt="DynoSure - CAN Bus Tools" src="/images/logo/dynoSure.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img height=70px alt="DynoSure - CAN Bus Tools" src="/images/logo/dynoSure.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-products ">
+      <a href="/services/">
+        
+        <span>Products</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-downloads ">
+      <a href="/downloads/">
+        
+        <span>Downloads</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <div class="service service-single">
+        <h1 class="title">DynoSure CAN Bridge - Dual-Channel CAN Bus Bridge &amp; Router</h1>
+        <div class="content"><p>The DynoSure CAN Bridge is an intelligent dual-channel CAN bus bridge and router powered by the Raspberry Pi RP2350 microcontroller. Featuring two independent CAN channels (CAN0 and CAN1) on a single rugged DB9 connector, it enables real-time message forwarding, filtering, ID translation, baud rate conversion, and bus isolation between two separate CAN networks without needing a PC.</p>
+<p><img src="/images/CanBridge.png" alt="DynoSure CAN Bridge"></p>
+<hr>
+<h1 id="-why-did-we-build-the-dynosure-can-bridge">💡 Why Did We Build the DynoSure CAN Bridge?</h1>
+<p>In automotive and industrial systems, different electronic control units (ECUs) and subsystems frequently operate across isolated CAN networks or at differing bitrates (such as a 250 kbps vehicle powertrain bus and a 500 kbps telemetry network). Bridging, monitoring, or testing these networks typically requires expensive gateway hardware or complicated multi-adapter PC setups.</p>
+<p>The <strong>DynoSure CAN Bridge</strong> solves this challenge by providing a compact, standalone bridge that connects two physical CAN buses directly. It handles real-time message forwarding, baud rate conversion, and message filtering completely autonomously.</p>
+<hr>
+<h1 id="key-applications">Key Applications</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Application</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Baud Rate Conversion</strong></td>
+					<td>Seamlessly bridge buses operating at different bitrates (e.g., 250 kbps to 500 kbps).</td>
+			</tr>
+			<tr>
+					<td><strong>ID Filtering &amp; Routing</strong></td>
+					<td>Selectively block or pass specific CAN IDs between networks to manage bus load.</td>
+			</tr>
+			<tr>
+					<td><strong>Bus &amp; Subnet Isolation</strong></td>
+					<td>Protect critical ECU subnets from non-critical, high-load, or diagnostic traffic.</td>
+			</tr>
+			<tr>
+					<td><strong>Message Translation</strong></td>
+					<td>Forward, re-map, or filter message frames in real time between channels.</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="specifications">Specifications</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter</th>
+					<th>Details</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Microcontroller</strong></td>
+					<td>Raspberry Pi RP2350</td>
+			</tr>
+			<tr>
+					<td><strong>CAN Interfaces</strong></td>
+					<td>2 Independent Channels (CAN0 &amp; CAN1)</td>
+			</tr>
+			<tr>
+					<td><strong>Supported CAN Protocols</strong></td>
+					<td>CAN 2.0A (11-bit Standard ID), CAN 2.0B (29-bit Extended ID)</td>
+			</tr>
+			<tr>
+					<td><strong>Bitrates</strong></td>
+					<td>Configurable per channel (up to 1 Mbps)</td>
+			</tr>
+			<tr>
+					<td><strong>USB Interface</strong></td>
+					<td>USB 2.0 (for firmware flashing / UF2 bootloader)</td>
+			</tr>
+			<tr>
+					<td><strong>Power Supply &amp; Operating Modes</strong></td>
+					<td>• <strong>Bridge Mode</strong>: Requires <strong>+12V DC</strong> external power supply via DB9 connector (<strong>Pin 9: +12V</strong>, <strong>Pin 3: GND</strong>)<br>• <strong>USB Mode</strong>: USB powered - acts as an <strong>RP2350 USB mass storage drive</strong> for firmware flashing</td>
+			</tr>
+			<tr>
+					<td><strong>Firmware Update</strong></td>
+					<td>Drag-and-drop <code>.uf2</code> file into <strong>RP2350</strong> drive</td>
+			</tr>
+			<tr>
+					<td><strong>Operating Temperature</strong></td>
+					<td>Extended range - suitable for industrial &amp; automotive environments</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="-db9-pinout-mapping">🔌 DB9 Pinout Mapping</h1>
+<p>Both independent CAN channels and power supply are integrated into a single standard DB9 connector:</p>
+<p><img src="/images/db9_connector.png" alt="DB9 Connector Pinout"></p>
+<table>
+	<thead>
+			<tr>
+					<th>DB9 Pin</th>
+					<th>Assignment</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Pin 1</strong></td>
+					<td><strong>CAN1-L</strong></td>
+					<td>Channel 1 CAN Low</td>
+			</tr>
+			<tr>
+					<td><strong>Pin 2</strong></td>
+					<td><strong>CAN0-L</strong></td>
+					<td>Channel 0 CAN Low</td>
+			</tr>
+			<tr>
+					<td><strong>Pin 3</strong></td>
+					<td><strong>GND</strong></td>
+					<td>Power &amp; Signal Ground</td>
+			</tr>
+			<tr>
+					<td><strong>Pin 7</strong></td>
+					<td><strong>CAN0-H</strong></td>
+					<td>Channel 0 CAN High</td>
+			</tr>
+			<tr>
+					<td><strong>Pin 8</strong></td>
+					<td><strong>CAN1-H</strong></td>
+					<td>Channel 1 CAN High</td>
+			</tr>
+			<tr>
+					<td><strong>Pin 9</strong></td>
+					<td><strong>+12V DC</strong></td>
+					<td>External Power Input (Bridge Mode)</td>
+			</tr>
+			<tr>
+					<td><strong>Others</strong></td>
+					<td>Not Connected</td>
+					<td>Reserved</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="-firmware-update-procedure">⚙️ Firmware Update Procedure</h1>
+<p>The DynoSure CAN Bridge utilizes the Raspberry Pi UF2 bootloader for effortless firmware updates:</p>
+<ol>
+<li>Connect the CAN Bridge to your PC using a standard USB cable.</li>
+<li>The device automatically enumerates as an <strong>RP2350</strong> mass storage drive.</li>
+<li>Drag and drop (or copy) the <code>.uf2</code> firmware file into the drive.</li>
+<li>The device flashes the firmware automatically and restarts ready for operation.</li>
+</ol>
+<hr>
+<h1 id="downloads">Downloads</h1>
+<table>
+	<thead>
+			<tr>
+					<th>Resource</th>
+					<th>Link</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>📄 Product Datasheet</td>
+					<td><a href="./../../files/DynoSure_CANBridge_Datasheet.pdf">⬇️ Download</a></td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="trusted-by">Trusted By</h1>
+<ul>
+<li>Bgauss Pvt Ltd.</li>
+<li>RTCON Engineering</li>
+<li>Jindal Mobilitric Pvt Ltd.</li>
+<li>MATEL Motion and Energy Solutions Pvt Ltd.</li>
+<li>TRONTEK ELECTRONICS LIMITED</li>
+<li>Lord&rsquo;s Automative Private Limited</li>
+</ul>
+<hr>
+<h3 id="-need-support-or-ready-to-order">📞 <strong>Need Support or Ready to Order?</strong></h3>
+<ul>
+<li><strong>Technical Support:</strong> <strong>+91 9422556559</strong></li>
+<li><strong>Sales &amp; Inquiries:</strong> <strong>+91 9898204057 (Mukesh Patel)</strong></li>
+<li><strong>Email:</strong> <strong><a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></strong></li>
+</ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">DynoSure</h3>
+        <div class="footer-contact">
+          <p>Affordable automotive diagnostic tools - engineered in India.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-contact">
+          
+          <p>✉️ <a href="mailto:dynosure.india@gmail.com">dynosure.india@gmail.com</a></p>
+          
+          
+          <p>📱 &#43;91 9898204057 (Mukesh Patel)</p>
+          
+          
+          <p>📱 &#43;91 9422556559</p>
+          
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3 class="footer-title">Links</h3>
+        <div id="footer-menu" class="footer-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-home ">
+      <a href="/">
+        
+        <span>Home</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+          
+            <div class="copyright">© 2026 Maruti Electrical & Electronics. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+
+
+
+
+<script type="text/javascript" src="/js/services.js"></script>
+
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+
+  
+
+  
+
+</body>
+
+</html>
